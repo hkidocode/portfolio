@@ -1,0 +1,17 @@
+
+.navbar {
+    @include center();
+    @include flexy(space-between);
+}
+
+
+.logo {
+    &__fn {
+        color: $clr-yellow;
+    }
+
+    &__ln {
+        color: $clr-yellow;
+    }
+    
+}

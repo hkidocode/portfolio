@@ -27,3 +27,10 @@ a {
   margin: 0 auto;
   display: flex;
   justify-content: space-between; }
+
+.logo__fn {
+  color: #AFF1DA; }
+
+.logo__ls {
+  color: #F9EA8F;
+  font-family: "Edo SZ"; }
