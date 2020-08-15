@@ -1,0 +1,62 @@
+// flex container 
+@mixin flexy(
+    $just : null,
+    $align : null,
+    $dir : null,
+    $wrap : null) {
+        display: flex;
+        justify-content: $just;
+        align-items: $align;
+        flex-direction: $dir;
+        flex-wrap: $wrap;
+    
+}
+
+
+
+// button style 
+@mixin btn-style($w,
+                 $h,
+                 $pd,
+                 $color: $clr-green-dark, 
+                 $bg-color: $clr-yellow, 
+                 $border: null) {
+
+                        width: $w;
+                        height: $h;
+                        padding: $pd $pd;
+                        color: $color;
+                        background-color: $bg-color;
+                        border-radius: 50px;
+                        border: $border;
+}
+
+
+
+// center parent width
+@mixin center($w: $global-w) {
+    width: $w;
+    margin: 0 auto;
+}
+
+
+
+// Media Queries 
+@mixin mq($breakpoint)  {
+    @if $breakpoint == 'small' {
+        @media (min-width: $break-s) and (max-width: $break-m) {
+            @content;
+        }
+    }
+    @else if $breakpoint == 'medium' {
+        @media (min-width: $break-m + 1) and (max-width: $break-l) {
+            @content;
+        }
+    }
+    @else if $breakpoint == 'large' {
+        @media (min-width: $break-l + 1) and (max-width: $break-xl) {
+            @content;
+        }
+    }  
+}
+
