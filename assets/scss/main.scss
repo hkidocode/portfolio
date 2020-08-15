@@ -1,4 +1,17 @@
-@import 'abstracts/colors', 'abstracts/typography', 'abstracts/helpers', 'abstracts/mixins', 'abstracts/functions', 'abstracts/general';
+@import 'abstracts/colors';
+@import 'abstracts/typography';
+@import 'abstracts/helpers';
+@import 'abstracts/mixins';
+@import 'abstracts/functions';
+@import 'abstracts/general';
 
 
-@import 'layout/navbar', 'layout/banner', 'layout/about', 'layout/services', 'layout/work', 'layout/blog', 'layout/projects', 'layout/contact', 'layout/footer';
+@import 'layout/navbar';
+@import 'layout/banner';
+@import 'layout/about';
+@import 'layout/services';
+@import 'layout/work';
+@import 'layout/blog';
+@import 'layout/projects';
+@import 'layout/contact';
+@import 'layout/footer';

@@ -6,15 +6,12 @@
 
 
 .logo {
-    img {
-        display: inline-block;
-        height: 40%;
-        line-height: 100%;
+    &__fn {
+        color: $clr-yellow;
     }
-}
 
-.nav {
-    @include flexy(space-between);
-    width: 70%;
-
+    &__ln {
+        color: $clr-yellow;
+    }
+    
 }
