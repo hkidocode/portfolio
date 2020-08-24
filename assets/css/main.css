@@ -82,7 +82,7 @@ a {
   display: inline-block;
   width: 36px;
   height: 3px;
-  border-radius: 2px;
+  border-radius: 7px;
   background-color: #AFF1DA;
   transform: rotate(90deg);
   position: absolute;
@@ -96,18 +96,15 @@ a {
 
 .options {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 
 .options__dark {
-  color: rgba(0, 0, 0, 0.9);
-  font-size: 19.2px;
-  cursor: pointer;
+  color: #77E6C0;
 }
 
 .options__language {
-  cursor: pointer;
   padding: 6px 2px;
   outline: none;
   border: 2px solid #F9EA8F;
@@ -116,12 +113,4 @@ a {
   font-family: "Edo SZ";
   color: #77E6C0;
   font-size: 16px;
-  margin-left: 26px;
-}
-
-/***************** BANNER SECTION *****************/
-.banner {
-  background-image: url(https://drive.google.com/file/d/19-bqu8h26tGX1V7QVfqX0ZmAWJUj9BuJ/view?usp=sharing);
-  width: 100%;
-  height: 500px;
 }
