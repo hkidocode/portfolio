@@ -1,9 +1,84 @@
+/***************** NAVBAR SECTION *****************/
+
+.header {
+    width: 100%;
+}
+
 
 .navbar {
     @include center();
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
     @include flexy(space-between);
-    background-color: yellow;
-    filter: blur(20px);
+}
+
+.logo img {
+    width: 120px;
+    height: 60px;
+    
+}
+
+.nav {
+    min-width: 474px;
+    @include flexy(space-between);
+    flex: .7;
+
+    &__item {
+        @include flexy(center, center);
+        position: relative;
+
+    }
+
+    &__item a {
+        color: $clr-p;
+        font-size: $base-fs * 1.5;
+        transition: color .2s ease-out;
+    }
+
+    &__item a:hover {
+        color: $clr-green;
+        
+    }
+
+    &__item .active {
+        display: inline-block;
+        width: 36px;
+        height: 3px;
+        border-radius: 7px;
+        background-color: $clr-green;
+        transform: rotate(90deg);
+        position: absolute;
+        top: -4px;
+        left: 20%;
+        
+    }
+
+    &__item .colored {
+        color:  $clr-green;
+    }
+
+}
+
+.options {
+    @include flexy(center, center);
+
+    &__dark {
+        color: $clr-green-dark;
+    }
+
+    &__language {
+        padding: 6px 2px;
+        outline: none;
+        border: 2px solid $clr-yellow;
+        border-radius: 9px;
+        text-transform: uppercase;
+        font-family: $ff-upper;
+        color: $clr-green-dark;
+        font-size: $base-fs
+    }
 }
 
 

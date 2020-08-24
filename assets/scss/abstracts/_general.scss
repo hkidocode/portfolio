@@ -1,7 +1,12 @@
+/***************** FONT FAMILY *****************/
+
 @font-face {
     font-family: $ff-upper;
     src: url(../../fonts/edosz.ttf);
 }
+
+/***************** RESET ELEMENTS *****************/
+
 
 *,
 *::before,
@@ -10,6 +15,9 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+/***************** BASIC STYLE *****************/
+
 
 body {
     font-family: $ff-normal;
@@ -26,4 +34,5 @@ ul {
 
 a {
     text-decoration: none;
+    text-align: center;
 }

@@ -33,7 +33,7 @@
 
 
 
-// center parent width
+// center elements horizontally
 @mixin center($w: $global-w) {
     width: $w;
     margin: 0 auto;
@@ -41,7 +41,7 @@
 
 
 
-// Media Queries 
+// media queries 
 @mixin mq($breakpoint)  {
     @if $breakpoint == 'small' {
         @media (min-width: $break-s) and (max-width: $break-m) {

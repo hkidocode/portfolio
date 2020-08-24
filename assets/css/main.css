@@ -1,8 +1,10 @@
+/***************** FONT FAMILY *****************/
 @font-face {
   font-family: "Edo SZ";
   src: url(../../fonts/edosz.ttf);
 }
 
+/***************** RESET ELEMENTS *****************/
 *,
 *::before,
 *::after {
@@ -11,6 +13,7 @@
   box-sizing: border-box;
 }
 
+/***************** BASIC STYLE *****************/
 body {
   font-family: "Abel", sans-serif;
 }
@@ -26,14 +29,88 @@ ul {
 
 a {
   text-decoration: none;
+  text-align: center;
+}
+
+/***************** NAVBAR SECTION *****************/
+.header {
+  width: 100%;
 }
 
 .navbar {
   width: 90%;
   margin: 0 auto;
+  padding: 20px;
+}
+
+.container {
+  width: 100%;
   display: flex;
   justify-content: space-between;
-  background-color: yellow;
-  -webkit-filter: blur(20px);
-          filter: blur(20px);
+}
+
+.logo img {
+  width: 120px;
+  height: 60px;
+}
+
+.nav {
+  min-width: 474px;
+  display: flex;
+  justify-content: space-between;
+  flex: .7;
+}
+
+.nav__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.nav__item a {
+  color: #635555;
+  font-size: 24px;
+  transition: color .2s ease-out;
+}
+
+.nav__item a:hover {
+  color: #AFF1DA;
+}
+
+.nav__item .active {
+  display: inline-block;
+  width: 36px;
+  height: 3px;
+  border-radius: 7px;
+  background-color: #AFF1DA;
+  transform: rotate(90deg);
+  position: absolute;
+  top: -4px;
+  left: 20%;
+}
+
+.nav__item .colored {
+  color: #AFF1DA;
+}
+
+.options {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.options__dark {
+  color: #77E6C0;
+}
+
+.options__language {
+  padding: 6px 2px;
+  outline: none;
+  border: 2px solid #F9EA8F;
+  border-radius: 9px;
+  text-transform: uppercase;
+  font-family: "Edo SZ";
+  color: #77E6C0;
+  font-size: 16px;
 }
