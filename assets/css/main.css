@@ -1,36 +1,39 @@
 @font-face {
   font-family: "Edo SZ";
-  src: url(../../fonts/edosz.ttf); }
+  src: url(../../fonts/edosz.ttf);
+}
 
 *,
 *::before,
 *::after {
   padding: 0;
   margin: 0;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
 body {
-  font-family: "Abel", sans-serif; }
+  font-family: "Abel", sans-serif;
+}
 
 img {
   max-width: 100%;
-  height: auto; }
+  height: auto;
+}
 
 ul {
-  list-style-type: none; }
+  list-style-type: none;
+}
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+}
 
 .navbar {
   width: 90%;
   margin: 0 auto;
   display: flex;
-  justify-content: space-between; }
-
-.logo__fn {
-  color: #AFF1DA; }
-
-.logo__ls {
-  color: #F9EA8F;
-  font-family: "Edo SZ"; }
+  justify-content: space-between;
+  background-color: yellow;
+  -webkit-filter: blur(20px);
+          filter: blur(20px);
+}

@@ -2,16 +2,8 @@
 .navbar {
     @include center();
     @include flexy(space-between);
+    background-color: yellow;
+    filter: blur(20px);
 }
 
 
-.logo {
-    &__fn {
-        color: $clr-yellow;
-    }
-
-    &__ln {
-        color: $clr-yellow;
-    }
-    
-}
