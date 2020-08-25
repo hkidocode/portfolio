@@ -11,7 +11,7 @@
 
     &__description {
         font-size: $fs-p;
-        @include center(70%);
+        @include center(65%);
         text-align: center;
         padding-bottom: ($general-spacing * 4);
     }
@@ -28,7 +28,7 @@
         flex: .8;
         position: relative;
         overflow: hidden;
-        transition: all .4 ease-in-out;
+        transition: all .3s ease-in-out;
     
 
         &__img {
@@ -65,7 +65,7 @@
             left: 0px;
             border-radius: 8px 8px 8px 0px ;
             transform: translateX(-100%);
-            transition: all .7s ease;
+            transition: all .6s ease;
         }
 
         &:hover::before {

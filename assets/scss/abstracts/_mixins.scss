@@ -20,6 +20,7 @@
                  $h, 
                  $bg-color: $clr-yellow,
                  $color: $clr-green-dark,
+                 $f-family: $ff-upper,
                  $border: none) {
 
                         width: $w;
@@ -28,7 +29,7 @@
                         color: $color;
                         border-radius: 30px;
                         border: $border;
-                        font-family: $ff-upper;
+                        font-family: $f-family;
                         text-align: center;
                         line-height: 50px; 
 }

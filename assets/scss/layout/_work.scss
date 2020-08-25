@@ -1,0 +1,36 @@
+/***************** WORK SECTION *****************/
+
+.work {
+    @include center();
+    padding-top: ($general-spacing * 4.5);
+
+    &__title {
+        @include title-style(center);
+        padding-bottom: $general-spacing * 2.5;
+    }
+
+    &__description {
+        font-size: $fs-p;
+        @include center(65%);
+        text-align: center;
+        padding-bottom: ($general-spacing * 4);
+    }
+
+    .work-type {
+        @include center(60%);
+        @include flexy(space-between);
+
+        &__item {
+            cursor: pointer;
+            @include btn-style(140px, 50px, $bg-color: #FFF,$color: $clr-p, $border: 2px solid $clr-yellow); 
+            font-size: $base-fs * 1.2;
+
+            &--active {
+                background-color: $clr-yellow;
+            }
+        }
+
+        
+
+    
+}
