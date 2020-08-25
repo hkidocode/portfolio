@@ -21,6 +21,7 @@
                  $bg-color: $clr-yellow,
                  $color: $clr-green-dark,
                  $f-family: $ff-upper,
+                 $ln-h: 50px,
                  $border: none) {
 
                         width: $w;
@@ -31,7 +32,7 @@
                         border: $border;
                         font-family: $f-family;
                         text-align: center;
-                        line-height: 50px; 
+                        line-height: $ln-h; 
 }
 
 

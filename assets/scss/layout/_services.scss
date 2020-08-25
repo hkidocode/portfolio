@@ -11,7 +11,7 @@
 
     &__description {
         font-size: $fs-p;
-        @include center(65%);
+        @include center();
         text-align: center;
         padding-bottom: ($general-spacing * 4);
     }
@@ -75,10 +75,6 @@
         
     }   
 
-
-    .skill + .skill {
-        margin-left: $general-spacing;
-    }
 
     .skill:nth-child(1) {
         border-radius: 8px 8px 20px 8px;
