@@ -16,6 +16,7 @@
 /***************** BASIC STYLE *****************/
 body {
   font-family: "Abel", sans-serif;
+  color: #635555;
 }
 
 img {
@@ -40,7 +41,7 @@ a {
 .navbar {
   width: 90%;
   margin: 0 auto;
-  padding: 20px;
+  padding: 20px 0px;
 }
 
 .container {
@@ -86,7 +87,7 @@ a {
   background-color: #AFF1DA;
   transform: rotate(90deg);
   position: absolute;
-  top: -4px;
+  top: -5px;
   left: 20%;
 }
 
@@ -101,16 +102,157 @@ a {
 }
 
 .options__dark {
-  color: #77E6C0;
+  cursor: pointer;
 }
 
 .options__language {
-  padding: 6px 2px;
+  cursor: pointer;
   outline: none;
+  padding: 6px 2px;
   border: 2px solid #F9EA8F;
   border-radius: 9px;
   text-transform: uppercase;
   font-family: "Edo SZ";
   color: #77E6C0;
   font-size: 16px;
+  margin-left: 26px;
 }
+
+/***************** ABOUT SECTION *****************/
+.about {
+  width: 90%;
+  margin: 0 auto;
+  padding: 90px 0px;
+}
+
+.about__title {
+  font-family: "Edo SZ";
+  font-size: 48px;
+  text-align: center;
+  color: #AFF1DA;
+}
+
+.about__title span {
+  display: inline-block;
+  width: 50px;
+  height: 6px;
+  border-radius: 3px;
+  background-color: #F9EA8F;
+  margin: 10px;
+}
+
+.about .columns {
+  display: flex;
+}
+
+.about__avatar {
+  flex: 1;
+  position: relative;
+}
+
+.about .border {
+  border: 15px solid #F9EA8F;
+  width: 90%;
+  height: 80%;
+  z-index: -1;
+  position: absolute;
+  top: 70px;
+  left: 20px;
+}
+
+.about__description {
+  flex: 2;
+  margin-left: 80px;
+  margin-top: 80px;
+}
+
+.about__description p {
+  margin-bottom: 74px;
+  font-size: 28.8px;
+  line-height: 1.4;
+}
+
+.about .btn-wrap {
+  margin-left: 16px;
+}
+
+.about .btn-wrap__download {
+  width: 200px;
+  height: 50px;
+  background-color: #F9EA8F;
+  color: #77E6C0;
+  border-radius: 30px;
+  border: none;
+  font-family: "Edo SZ";
+  text-align: center;
+  line-height: 50px;
+  display: inline-block;
+  font-size: 24px;
+  margin-right: 60px;
+  position: relative;
+  overflow: hidden;
+  transition: all .2s ease-in-out;
+}
+
+.about .btn-wrap__download::before {
+  content: '';
+  width: 100%;
+  height: 20px;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateX(-100%) rotate(45deg);
+  transition: all .5s ease-in-out;
+}
+
+.about .btn-wrap__download:hover {
+  transform: translateY(-4px);
+  background-color: #FFFFFF;
+  border: 2px solid #F9EA8F;
+}
+
+.about .btn-wrap__download:hover::before {
+  transform: translateX(100%) rotate(45deg);
+}
+
+.about .btn-wrap__view {
+  width: 200px;
+  height: 50px;
+  background-color: #FFF;
+  color: #77E6C0;
+  border-radius: 30px;
+  border: 2px solid #F9EA8F;
+  font-family: "Edo SZ";
+  text-align: center;
+  line-height: 50px;
+  display: inline-block;
+  font-size: 24px;
+  position: relative;
+  overflow: hidden;
+  transition: all .2s ease-in-out;
+}
+
+.about .btn-wrap__view::before {
+  content: '';
+  width: 100%;
+  height: 20px;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateX(-100%) rotate(45deg);
+  transition: all .5s ease-in-out;
+}
+
+.about .btn-wrap__view:hover {
+  transform: translateY(-4px);
+  background-color: #F9EA8F;
+  border: none;
+}
+
+.about .btn-wrap__view:hover::before {
+  transform: translateX(100%) rotate(45deg);
+}
+
+/***************** SERVICES SECTION *****************/

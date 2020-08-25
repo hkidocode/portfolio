@@ -1,0 +1,123 @@
+/***************** ABOUT SECTION *****************/
+
+.about {
+    @include center();
+    padding: ($general-spacing * 4.5)  0px;
+
+
+    &__title {
+        font-family: $ff-upper;
+        font-size: $base-fs * 3;
+        text-align: center;
+        color: $clr-green;
+    }
+
+    &__title span {
+        display: inline-block;
+        width: 50px;
+        height: 6px;
+        border-radius: 3px;
+        background-color: $clr-yellow;
+        margin: ($general-spacing / 2);
+    }
+
+    .columns {
+        @include flexy();
+    }
+
+    &__avatar {
+        flex: 1;
+        position: relative;
+    }
+
+    .border {
+        border: 15px solid $clr-yellow;
+        width: 90%;
+        height: 80%;
+        z-index: -1;
+        position: absolute;
+        top: 70px;
+        left: 20px;
+    }
+
+    &__description {
+        flex: 2;
+        margin-left: ($general-spacing * 4);
+        margin-top: ($general-spacing * 4);
+    }
+
+    &__description p {
+        margin-bottom: ($general-spacing * 3.7);
+        font-size: $base-fs * 1.8;
+        line-height: 1.4;
+    }
+
+    .btn-wrap {
+        margin-left: 16px;
+
+        &__download {
+            @include btn-style(200px, 50px);
+            display: inline-block;
+            font-size: $base-fs * 1.5;
+            margin-right: 60px;
+            position: relative;
+            overflow: hidden;
+            transition: all .2s ease-in-out;
+
+        }
+
+        &__download::before {
+            content: '';
+            width: 100%;
+            height: 20px; 
+            background-color: rgba($color: #000000, $alpha: .3);
+            position: absolute;
+            top: 0;
+            left: 0;
+            transform: translateX(-100%) rotate(45deg);
+            transition: all .5s ease-in-out;
+
+        }
+
+        &__download:hover {
+            transform: translateY(-4px);
+            background-color: $clr-white;
+            border: 2px solid $clr-yellow;
+        }
+
+        &__download:hover::before {
+            transform: translateX(100%) rotate(45deg);
+        }   
+
+        &__view {
+            @include btn-style(200px, 50px, $bg-color: #FFF, $border: 2px solid $clr-yellow);
+            display: inline-block;
+            font-size: $base-fs * 1.5;
+            position: relative;
+            overflow: hidden;
+            transition: all .2s ease-in-out;
+        }
+
+        &__view::before {
+            content: '';
+            width: 100%;
+            height: 20px; 
+            background-color: rgba($color: #000000, $alpha: .3);
+            position: absolute;
+            top: 0;
+            left: 0;
+            transform: translateX(-100%) rotate(45deg);
+            transition: all .5s ease-in-out;
+        }
+
+        &__view:hover {
+            transform: translateY(-4px);
+            background-color: $clr-yellow;
+            border: none;
+        }
+
+        &__view:hover::before {
+            transform: translateX(100%) rotate(45deg);
+        } 
+    }
+}

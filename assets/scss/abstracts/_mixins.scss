@@ -4,6 +4,7 @@
     $align : null,
     $dir : null,
     $wrap : null) {
+
         display: flex;
         justify-content: $just;
         align-items: $align;
@@ -16,19 +17,20 @@
 
 // button style 
 @mixin btn-style($w,
-                 $h,
-                 $pd,
-                 $color: $clr-green-dark, 
-                 $bg-color: $clr-yellow, 
-                 $border: null) {
+                 $h, 
+                 $bg-color: $clr-yellow,
+                 $color: $clr-green-dark,
+                 $border: none) {
 
                         width: $w;
                         height: $h;
-                        padding: $pd $pd;
-                        color: $color;
                         background-color: $bg-color;
-                        border-radius: 50px;
+                        color: $color;
+                        border-radius: 30px;
                         border: $border;
+                        font-family: $ff-upper;
+                        text-align: center;
+                        line-height: 50px; 
 }
 
 

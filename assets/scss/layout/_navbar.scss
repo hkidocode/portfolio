@@ -7,7 +7,7 @@
 
 .navbar {
     @include center();
-    padding: 20px;
+    padding: 20px 0px;
 }
 
 .container {
@@ -51,7 +51,7 @@
         background-color: $clr-green;
         transform: rotate(90deg);
         position: absolute;
-        top: -4px;
+        top: -5px;
         left: 20%;
         
     }
@@ -66,18 +66,20 @@
     @include flexy(center, center);
 
     &__dark {
-        color: $clr-green-dark;
+        cursor: pointer;
     }
 
     &__language {
-        padding: 6px 2px;
+        cursor: pointer;
         outline: none;
+        padding: 6px 2px;
         border: 2px solid $clr-yellow;
         border-radius: 9px;
         text-transform: uppercase;
         font-family: $ff-upper;
         color: $clr-green-dark;
-        font-size: $base-fs
+        font-size: $base-fs;
+        margin-left: 26px;
     }
 }
 
