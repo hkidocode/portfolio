@@ -1,0 +1,55 @@
+/***************** FOOTER SECTION *****************/
+
+.footer-container {
+    width: 100%;
+    height: 100%;
+    background-color: $clr-green;
+    line-height: 100px;
+}
+
+.footer {
+    @include center();
+    @include flexy(space-between);
+
+    & > *:not(&__copyright) {
+        @include flexy($align: center);
+        
+    }
+
+    &__logo {
+        flex: .5;
+    }
+
+    &__logo img {
+        width: 120px;
+        height: 60px;
+    
+    }
+
+    &__copyright {
+        color: $clr-white;
+        font-size: $base-fs * 1.4;
+        font-size: bold;
+        text-align: center;
+        flex: 2;
+    }
+
+    &__social {
+        @include flexy(space-between);
+        flex: .5;
+
+        .icon a {
+            color: $clr-white;
+            font-size: $base-fs * 1.3;
+            transition: color .2s ease-in;
+        }
+
+        .icon a:hover {
+            color: $clr-yellow;
+        }
+
+        
+    }
+
+
+}

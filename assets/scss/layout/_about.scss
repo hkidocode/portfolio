@@ -16,12 +16,18 @@
     &__avatar {
         flex: 1;
         position: relative;
+
+    }
+
+    &__avatar img {
+        min-width: 357.5px;
+        min-height: 533px;
     }
 
     .border {
         border: 15px solid $clr-yellow;
-        width: 90%;
-        height: 80%;
+        min-width: 322px;
+        min-height: 430px;
         z-index: -1;
         position: absolute;
         top: 70px;
