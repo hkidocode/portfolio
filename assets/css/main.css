@@ -539,3 +539,29 @@ i {
 .blog .blog-wrap .read-btn:hover::before {
   transform: translateX(100%) rotate(45deg);
 }
+
+/***************** CONTACT SECTION *****************/
+.contact {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.contact__title {
+  font-family: "Edo SZ";
+  font-size: 48px;
+  text-align: left;
+  color: #AFF1DA;
+}
+
+.contact__title span {
+  display: inline-block;
+  width: 50px;
+  height: 6px;
+  border-radius: 3px;
+  background-color: #F9EA8F;
+  margin: 10px;
+}
+
+.contact__infos {
+  display: flex;
+}
