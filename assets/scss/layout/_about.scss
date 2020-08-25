@@ -2,23 +2,11 @@
 
 .about {
     @include center();
-    padding: ($general-spacing * 4.5)  0px;
+    padding-top: ($general-spacing * 4.5);
 
 
     &__title {
-        font-family: $ff-upper;
-        font-size: $base-fs * 3;
-        text-align: center;
-        color: $clr-green;
-    }
-
-    &__title span {
-        display: inline-block;
-        width: 50px;
-        height: 6px;
-        border-radius: 3px;
-        background-color: $clr-yellow;
-        margin: ($general-spacing / 2);
+        @include title-style(center);
     }
 
     .columns {
@@ -48,7 +36,7 @@
 
     &__description p {
         margin-bottom: ($general-spacing * 3.7);
-        font-size: $base-fs * 1.8;
+        font-size: $fs-p;
         line-height: 1.4;
     }
 
@@ -80,7 +68,6 @@
         }
 
         &__download:hover {
-            transform: translateY(-4px);
             background-color: $clr-white;
             border: 2px solid $clr-yellow;
         }
@@ -111,7 +98,6 @@
         }
 
         &__view:hover {
-            transform: translateY(-4px);
             background-color: $clr-yellow;
             border: none;
         }

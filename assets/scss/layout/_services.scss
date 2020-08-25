@@ -1,1 +1,94 @@
 /***************** SERVICES SECTION *****************/
+
+.services  {
+    @include center();
+    padding-top: ($general-spacing * 4.5);
+
+    &__title {
+        @include title-style(left);
+        padding-bottom: $general-spacing * 2.5;
+    }
+
+    &__description {
+        font-size: $fs-p;
+        @include center(70%);
+        text-align: center;
+        padding-bottom: ($general-spacing * 4);
+    }
+
+    &__content {
+        @include flexy(space-between);
+        @include center(85%); 
+    }
+
+    .skill {
+        padding: ($general-spacing * 1.5) 0px ;
+        border: 2px solid $clr-green;
+        text-align: center;
+        flex: .8;
+        position: relative;
+        overflow: hidden;
+        transition: all .4 ease-in-out;
+    
+
+        &__img {
+            width: 70px;
+            height: 60px;
+            margin-bottom: 16px;
+        }
+
+        &__name {
+            font-size: $base-fs * 1.9;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        &__detail {
+            font-size: $base-fs * 1.2;
+            @include center(80%);
+
+        }
+
+        &:hover {
+            background-color: $clr-green;
+            color: white;
+            border: none;
+        }
+
+        &::before {
+            content: '';
+            width: 100%;
+            height: 5px;
+            background-color: $clr-yellow;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            border-radius: 8px 8px 8px 0px ;
+            transform: translateX(-100%);
+            transition: all .7s ease;
+        }
+
+        &:hover::before {
+            transform: translateX(0%);
+        }
+
+        
+    }   
+
+
+    .skill + .skill {
+        margin-left: $general-spacing;
+    }
+
+    .skill:nth-child(1) {
+        border-radius: 8px 8px 20px 8px;
+    }
+
+    .skill:nth-child(2) {
+        border-radius: 8px 8px 20px 20px;
+    }
+
+    .skill:nth-child(3) {
+        border-radius: 8px 8px 8px 20px;
+    }
+}

@@ -42,6 +42,24 @@
 }
 
 
+// titles style
+@mixin title-style($txt-algn) {
+    font-family: $ff-upper;
+    font-size: $base-fs * 3;
+    text-align: $txt-algn;
+    color: $clr-green;
+
+    & span {
+        display: inline-block;
+        width: 50px;
+        height: 6px;
+        border-radius: 3px;
+        background-color: $clr-yellow;
+        margin: ($general-spacing / 2);
+    }
+}
+
+
 
 // media queries 
 @mixin mq($breakpoint)  {

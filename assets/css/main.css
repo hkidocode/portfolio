@@ -122,7 +122,7 @@ a {
 .about {
   width: 90%;
   margin: 0 auto;
-  padding: 90px 0px;
+  padding-top: 90px;
 }
 
 .about__title {
@@ -168,7 +168,7 @@ a {
 
 .about__description p {
   margin-bottom: 74px;
-  font-size: 28.8px;
+  font-size: 27.2px;
   line-height: 1.4;
 }
 
@@ -207,7 +207,6 @@ a {
 }
 
 .about .btn-wrap__download:hover {
-  transform: translateY(-4px);
   background-color: #FFFFFF;
   border: 2px solid #F9EA8F;
 }
@@ -246,7 +245,6 @@ a {
 }
 
 .about .btn-wrap__view:hover {
-  transform: translateY(-4px);
   background-color: #F9EA8F;
   border: none;
 }
@@ -256,3 +254,107 @@ a {
 }
 
 /***************** SERVICES SECTION *****************/
+.services {
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 90px;
+}
+
+.services__title {
+  font-family: "Edo SZ";
+  font-size: 48px;
+  text-align: left;
+  color: #AFF1DA;
+  padding-bottom: 50px;
+}
+
+.services__title span {
+  display: inline-block;
+  width: 50px;
+  height: 6px;
+  border-radius: 3px;
+  background-color: #F9EA8F;
+  margin: 10px;
+}
+
+.services__description {
+  font-size: 27.2px;
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 80px;
+}
+
+.services__content {
+  display: flex;
+  justify-content: space-between;
+  width: 85%;
+  margin: 0 auto;
+}
+
+.services .skill {
+  padding: 30px 0px;
+  border: 2px solid #AFF1DA;
+  text-align: center;
+  flex: .8;
+  position: relative;
+  overflow: hidden;
+  transition: all .4 ease-in-out;
+}
+
+.services .skill__img {
+  width: 70px;
+  height: 60px;
+  margin-bottom: 16px;
+}
+
+.services .skill__name {
+  font-size: 30.4px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.services .skill__detail {
+  font-size: 19.2px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.services .skill:hover {
+  background-color: #AFF1DA;
+  color: white;
+  border: none;
+}
+
+.services .skill::before {
+  content: '';
+  width: 100%;
+  height: 5px;
+  background-color: #F9EA8F;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  border-radius: 8px 8px 8px 0px;
+  transform: translateX(-100%);
+  transition: all .7s ease;
+}
+
+.services .skill:hover::before {
+  transform: translateX(0%);
+}
+
+.services .skill + .skill {
+  margin-left: 20px;
+}
+
+.services .skill:nth-child(1) {
+  border-radius: 8px 8px 20px 8px;
+}
+
+.services .skill:nth-child(2) {
+  border-radius: 8px 8px 20px 20px;
+}
+
+.services .skill:nth-child(3) {
+  border-radius: 8px 8px 8px 20px;
+}
