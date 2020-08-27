@@ -19,13 +19,15 @@
     .blog-wrap {
         @include flexy(space-between);
         @include center(85%);
+        
        
 
         &__item {
-            flex: .8;
             box-shadow: 0 0 10px rgba($color: grey, $alpha: .3);
             border-radius: 10px;
             padding-bottom: $general-spacing * 1.3;
+            flex-basis: 30%;
+            
         }
 
         .blog-container {

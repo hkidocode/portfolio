@@ -305,7 +305,7 @@ i {
   padding: 30px 0px;
   border: 2px solid #AFF1DA;
   text-align: center;
-  flex: .8;
+  flex-basis: 30%;
   position: relative;
   overflow: hidden;
   transition: all .3s ease-in-out;
@@ -461,10 +461,10 @@ i {
 }
 
 .blog .blog-wrap__item {
-  flex: .8;
   box-shadow: 0 0 10px rgba(128, 128, 128, 0.3);
   border-radius: 10px;
   padding-bottom: 26px;
+  flex-basis: 30%;
 }
 
 .blog .blog-wrap .blog-container {
