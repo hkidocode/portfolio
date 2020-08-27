@@ -590,10 +590,16 @@ i {
 }
 
 .blog .blog-wrap__item {
-  box-shadow: 0 0 10px rgba(128, 128, 128, 0.3);
+  border: 1px solid #EAEAEA;
   border-radius: 10px;
   padding-bottom: 26px;
   flex-basis: 30%;
+}
+
+.blog .blog-wrap__item:hover {
+  box-shadow: 0 0 5px rgba(128, 128, 128, 0.3);
+  transform: translateY(-5px);
+  transition: all .4s ease-in-out;
 }
 
 .blog .blog-wrap .blog-container {
