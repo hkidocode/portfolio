@@ -45,7 +45,7 @@ i {
 .navbar {
   width: 90%;
   margin: 0 auto;
-  padding: 20px 0px;
+  padding: 30px 0px;
 }
 
 .container {
@@ -70,7 +70,6 @@ i {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
 }
 
 .nav__item a {
@@ -79,23 +78,11 @@ i {
   transition: color .2s ease-out;
 }
 
-.nav__item a:hover {
+.nav__item .active {
   color: #AFF1DA;
 }
 
-.nav__item .active {
-  display: inline-block;
-  width: 36px;
-  height: 3px;
-  border-radius: 7px;
-  background-color: #AFF1DA;
-  transform: rotate(90deg);
-  position: absolute;
-  top: -5px;
-  left: 20%;
-}
-
-.nav__item .colored {
+.nav__item a:hover {
   color: #AFF1DA;
 }
 
