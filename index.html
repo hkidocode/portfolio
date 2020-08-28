@@ -50,10 +50,13 @@
                     <p class="content__job">Web Designer, Frontend Developer, and Backend Developer</p>
                     <a href="#" class="content__button">View my work</a>
                     <ul class="social">
-                        <li class="social__icon"><a href="https://github.com/hkidocode"><i class="fab fa-github-alt"></i></a>
+                        <li class="social__icon"><a href="https://github.com/hkidocode"><i
+                                    class="fab fa-github-alt"></i></a>
                         </li>
-                        <li class="social__icon"><a href="https://www.linkedin.com/in/mustapha-kadouri/"><i class="fab fa-linkedin-in"></i></a></i></li>
-                        <li class="social__icon"><a href="https://www.facebook.com/mustapha.kadouri.1"><i class="fab fa-facebook-f"></i></a></li>
+                        <li class="social__icon"><a href="https://www.linkedin.com/in/mustapha-kadouri/"><i
+                                    class="fab fa-linkedin-in"></i></a></i></li>
+                        <li class="social__icon"><a href="https://www.facebook.com/mustapha.kadouri.1"><i
+                                    class="fab fa-facebook-f"></i></a></li>
                         <li class="social__icon"><a href="#"><i class="fab fa-twitter"></i></a></li>
                     </ul>
                 </div>
@@ -298,7 +301,7 @@
 
         <!--Start contact section-->
         <section id="contact" class="contact">
-            <h1 class="contact__title title"><span></span>Get in touch<span></span></h1>
+            <h1 class="contact__title"><span></span>Get in touch<span></span></h1>
             <div class="contact__infos">
                 <div class="info">
                     <i class="fas fa-mobile info__icon"></i>
@@ -315,10 +318,14 @@
             </div>
 
             <form action="POST" class="contact__form">
-                <input type="text" placeholder="Full name *" name="full-name">
-                <input type="email" placeholder="Email adress *" name="email">
-                <input class="s-ln" type="text" placeholder="Your message here *" name="message">
-                <button class="form__button" type="submit"></button>
+                <div class="top-form">
+                    <input type="text" placeholder="Full name *" name="full-name" class="top-form__name">
+                    <input type="email" placeholder="Email adress *" name="email" class="top-form__email">
+                </div>
+                <div class="bottom-form">
+                    <textarea name="message" placeholder="Your message here *" cols="30" rows="10" class="message"></textarea>
+                </div>
+                <button class="button" type="submit">Send message</button>
             </form>
         </section>
         <!--End contact section-->

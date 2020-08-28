@@ -61,6 +61,24 @@
     }
 }
 
+// inputs styles 
+@mixin  input-style($h) {
+    outline: none;
+    border: 1px solid $clr-p;
+    height: $h;
+    padding: 0 $general-spacing;
+    font-size: $base-fs * 1.2;
+    font-family: $ff-normal;
+    font-weight: normal;
+    letter-spacing: 1px;
+    color: $clr-p;
+    border-radius: 7px;
+
+    &:focus {
+        border: 2px solid $clr-yellow;
+    }
+}
+
 
 
 // media queries 

@@ -1,24 +1,93 @@
 /***************** CONTACT SECTION *****************/
 .contact {
-    width: 90%;
-    margin: 0 auto;
-  }
+    @include center();
   
-  .contact__title {
-    font-family: "Edo SZ";
-    font-size: 48px;
-    text-align: left;
-    color: #AFF1DA;
-  }
+    &__title {
+      @include title-style(left);
+      padding-bottom: $general-spacing * 2.5;
+    }
+
+    &__infos {
+      @include flexy(space-around);
+      margin-bottom: $general-spacing * 3;
+
+      .info {
+        @include flexy($dir: column, $just: space-evenly, $wrap: wrap);
+        text-align: center;
+        background-color: $clr-yellow;
+        height: ($general-spacing * 9);
+        padding: 0px ($general-spacing * 1.5);
+        border-radius: 10px;
+        flex-basis: 25%;
+        transition: transform .4s ease-in-out;
+
+
+        &__icon {
+          color: $clr-p;
+          font-size: $base-fs * 4;
+        }
+
+        &__content {
+          font-size: $base-fs * 1.5;
+        }
+
+      }
+
+      .info:hover {
+        transform: translateY(-5px);
+      }
+
+    }
+
+    &__form  {
+      @include center();     
+
+      .top-form {
+        @include flexy(space-between);
+
+        margin-bottom: $general-spacing;
+        
+        &__name {
+          flex-basis: 35%;
+          @include input-style(46px);
+          
+
+        }
+
+        &__email {
+          flex-basis: 63%;
+          @include input-style(46px);
+
+        }
+
+      }
+
+      .bottom-form {
+        margin-bottom: $general-spacing * 1.5;
+        .message {
+          width: 100%;
+          resize: none;
+          @include input-style(200px);
+          padding-top: $general-spacing / 2;
+
+        }
+      }
+
+      .button {
+        @include btn-style(100%, 50px);
+        font-size: $base-fs * 1.5;
+        margin-bottom: $general-spacing * 6;
+        outline: none;
+      }
+
   
-  .contact__title span {
-    display: inline-block;
-    width: 50px;
-    height: 6px;
-    border-radius: 3px;
-    background-color: #F9EA8F;
-    margin: 10px;
-    
+
+      .button:hover {
+          background-color: $clr-white;
+          border: 2px solid $clr-yellow;
+      }  
+
+      
+    }
+
 }
-
-
