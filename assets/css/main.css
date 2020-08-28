@@ -109,13 +109,13 @@ i {
 }
 
 /***************** BLOG SECTION *****************/
-.gradient-overlay {
+.banner {
   position: relative;
   width: 100%;
   height: 100%;
 }
 
-.gradient-overlay::after {
+.banner::after {
   content: '';
   position: absolute;
   top: 0;
@@ -126,12 +126,12 @@ i {
   opacity: .5;
 }
 
-.gradient-overlay img {
+.banner img {
   -webkit-filter: saturate(2);
           filter: saturate(2);
 }
 
-.gradient-overlay .content {
+.banner .content {
   position: absolute;
   z-index: 1;
   top: 30%;
@@ -139,7 +139,7 @@ i {
   right: 7.5%;
 }
 
-.gradient-overlay .content__greeting {
+.banner .content__greeting {
   color: #AFF1DA;
   background-color: #FFFFFF;
   font-size: 27.2px;
@@ -148,7 +148,7 @@ i {
   border-radius: 9px;
 }
 
-.gradient-overlay .content__fullname {
+.banner .content__fullname {
   font-size: 60.8px;
   color: #F9EA8F;
   font-weight: lighter;
@@ -157,7 +157,7 @@ i {
   position: relative;
 }
 
-.gradient-overlay .content__fullname::after {
+.banner .content__fullname::after {
   content: '';
   width: 60px;
   height: 4px;
@@ -167,18 +167,18 @@ i {
   top: 50%;
 }
 
-.gradient-overlay .content__fullname span {
+.banner .content__fullname span {
   font-weight: bold;
   letter-spacing: 3px;
 }
 
-.gradient-overlay .content__job {
+.banner .content__job {
   color: #FFFFFF;
   font-size: 32px;
   letter-spacing: 1px;
 }
 
-.gradient-overlay .content__button {
+.banner .content__button {
   display: inline-block;
   margin: 40px 10px;
   width: 200px;
@@ -195,7 +195,7 @@ i {
   overflow: hidden;
 }
 
-.gradient-overlay .content__button::before {
+.banner .content__button::before {
   content: '';
   width: 100%;
   height: 20px;
@@ -207,16 +207,16 @@ i {
   transition: all .5s ease-in-out;
 }
 
-.gradient-overlay .content__button:hover {
+.banner .content__button:hover {
   background-color: #FFFFFF;
   border: 2px solid #F9EA8F;
 }
 
-.gradient-overlay .content__button:hover::before {
+.banner .content__button:hover::before {
   transform: translateX(100%) rotate(45deg);
 }
 
-.gradient-overlay .social {
+.banner .social {
   width: 20%;
   display: flex;
   justify-content: space-between;
@@ -226,7 +226,7 @@ i {
   z-index: 1;
 }
 
-.gradient-overlay .social__icon a {
+.banner .social__icon a {
   display: inline-block;
   width: 40px;
   height: 40px;
@@ -236,15 +236,15 @@ i {
   transition: background-color .2s ease-in-out;
 }
 
-.gradient-overlay .social__icon a:hover {
+.banner .social__icon a:hover {
   background-color: #FFFFFF;
 }
 
-.gradient-overlay .social__icon a:hover > i {
+.banner .social__icon a:hover > i {
   color: #635555;
 }
 
-.gradient-overlay .social__icon i {
+.banner .social__icon i {
   color: #FFFFFF;
   font-size: 19.2px;
   line-height: 40px;
