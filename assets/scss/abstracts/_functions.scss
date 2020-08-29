@@ -9,7 +9,3 @@
     @return ($target / $context) * 1rem;
 }
 
-// px to percentage 
-@function px-to-pct($target, $context: $base-fs) {
-    @return ($target / $context) * 100%;
-}

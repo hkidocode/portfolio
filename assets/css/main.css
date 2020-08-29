@@ -262,7 +262,7 @@ i {
   font-family: "Edo SZ";
   font-size: 48px;
   text-align: center;
-  color: #AFF1DA;
+  color: #77E6C0;
 }
 
 .about__title span {
@@ -402,7 +402,7 @@ i {
   font-family: "Edo SZ";
   font-size: 48px;
   text-align: left;
-  color: #AFF1DA;
+  color: #77E6C0;
   padding-bottom: 50px;
 }
 
@@ -504,7 +504,7 @@ i {
   font-family: "Edo SZ";
   font-size: 48px;
   text-align: center;
-  color: #AFF1DA;
+  color: #77E6C0;
   padding-bottom: 50px;
 }
 
@@ -550,6 +550,130 @@ i {
   background-color: #F9EA8F;
 }
 
+.mentors {
+  padding-bottom: 80px;
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 90px;
+}
+
+.mentors__title {
+  font-family: "Edo SZ";
+  font-size: 48px;
+  text-align: center;
+  color: #77E6C0;
+  padding-bottom: 115px;
+}
+
+.mentors__title span {
+  display: inline-block;
+  width: 50px;
+  height: 6px;
+  border-radius: 3px;
+  background-color: #F9EA8F;
+  margin: 10px;
+}
+
+.mentors__nav {
+  text-align: center;
+  margin-top: 60px;
+}
+
+.mentors__nav .indicator {
+  cursor: pointer;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  border: 3px solid #F9EA8F;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+}
+
+.mentors__nav .indicator + .indicator {
+  margin-left: 5px;
+}
+
+.mentors__nav .current-slide {
+  background-color: #F9EA8F;
+}
+
+.carasoul {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  height: 337px;
+}
+
+.carasoul__track {
+  text-align: center;
+  height: 100%;
+  position: relative;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.carasoul__track .mentor {
+  background-color: #AFF1DA;
+  padding: 80px 30px 60px;
+  border-radius: 8px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+}
+
+.carasoul__track .mentor__img {
+  width: 120px;
+  border-radius: 50%;
+  position: absolute;
+  top: -65px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.carasoul__track .mentor__name {
+  color: #3D28C3;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 5px;
+  letter-spacing: 1px;
+}
+
+.carasoul__track .mentor__role {
+  color: #FFFFFF;
+  font-weight: lighter;
+  font-size: 19.2px;
+  margin-bottom: 30px;
+}
+
+.carasoul__track .mentor__review {
+  font-size: 20.8px;
+}
+
+.carasoul__previous {
+  cursor: pointer;
+  font-family: "Edo SZ";
+  outline: none;
+  border: none;
+  background-color: transparent;
+  font-size: 64px;
+  color: #77E6C0;
+  transform: rotate(80deg);
+}
+
+.carasoul__next {
+  cursor: pointer;
+  font-family: "Edo SZ";
+  outline: none;
+  border: none;
+  background-color: transparent;
+  font-size: 64px;
+  color: #77E6C0;
+  transform: rotate(260deg);
+}
+
 /***************** BLOG SECTION *****************/
 .blog {
   width: 90%;
@@ -561,7 +685,7 @@ i {
   font-family: "Edo SZ";
   font-size: 48px;
   text-align: left;
-  color: #AFF1DA;
+  color: #77E6C0;
   padding-bottom: 50px;
 }
 
@@ -689,7 +813,7 @@ i {
   font-family: "Edo SZ";
   font-size: 48px;
   text-align: left;
-  color: #AFF1DA;
+  color: #77E6C0;
   padding-bottom: 50px;
 }
 

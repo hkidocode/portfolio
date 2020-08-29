@@ -1,0 +1,39 @@
+.mentors {
+    padding-bottom: 80px;
+    @include center();
+    padding-top: ($general-spacing * 4.5);
+
+    &__title {
+        @include title-style(center);
+        padding-bottom: $general-spacing * 5.75;
+    }
+
+    &__nav {
+        text-align: center;
+        margin-top: $general-spacing * 3;
+
+        .indicator {
+            cursor: pointer;
+            outline: none;
+            border: none;
+            background-color: transparent;
+            border: 3px solid $clr-yellow;
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+        }
+
+        .indicator + .indicator {
+            margin-left: $general-spacing / 4;
+        }
+
+        .current-slide {
+            background-color: $clr-yellow;
+        }
+
+
+    }
+}
+
+@import '../components/carasoul';
+
