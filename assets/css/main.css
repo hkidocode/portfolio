@@ -596,40 +596,49 @@ i {
 
 .mentors__nav .current-slide {
   background-color: #F9EA8F;
+  transition: all .3s ease-in;
 }
 
 .carasoul {
   width: 80%;
   margin: 0 auto;
   display: flex;
+  justify-content: space-between;
+  height: 400px;
+}
+
+.carasoul__track-container {
+  height: 100%;
+  width: 50%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
   align-items: center;
-  height: 337px;
+  border-radius: 8px;
 }
 
 .carasoul__track {
+  position: relative;
   text-align: center;
   height: 100%;
-  position: relative;
-  width: 60%;
-  margin: 0 auto;
+  width: 100%;
+  transition: transform .7s ease-in-out;
 }
 
 .carasoul__track .mentor {
   background-color: #AFF1DA;
-  padding: 80px 30px 60px;
-  border-radius: 8px;
+  padding: 0px 30px;
   position: absolute;
   top: 0;
-  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .carasoul__track .mentor__img {
   width: 120px;
   border-radius: 50%;
-  position: absolute;
-  top: -65px;
-  left: 50%;
-  transform: translateX(-50%);
+  margin-top: 20px;
 }
 
 .carasoul__track .mentor__name {
@@ -637,7 +646,7 @@ i {
   text-transform: uppercase;
   font-weight: bold;
   font-size: 24px;
-  margin-bottom: 5px;
+  margin-bottom: 4px;
   letter-spacing: 1px;
 }
 
@@ -645,11 +654,19 @@ i {
   color: #FFFFFF;
   font-weight: lighter;
   font-size: 19.2px;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 
 .carasoul__track .mentor__review {
   font-size: 20.8px;
+}
+
+.carasoul__slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .carasoul__previous {
@@ -672,6 +689,11 @@ i {
   font-size: 64px;
   color: #77E6C0;
   transform: rotate(260deg);
+}
+
+.carasoul .is-hidden {
+  opacity: 0;
+  cursor: auto;
 }
 
 /***************** BLOG SECTION *****************/

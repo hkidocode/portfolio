@@ -2,6 +2,7 @@
     padding-bottom: 80px;
     @include center();
     padding-top: ($general-spacing * 4.5);
+    
 
     &__title {
         @include title-style(center);
@@ -29,8 +30,8 @@
 
         .current-slide {
             background-color: $clr-yellow;
+            transition: all .3s ease-in;
         }
-
 
     }
 }
