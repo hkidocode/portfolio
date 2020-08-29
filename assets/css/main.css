@@ -262,7 +262,7 @@ i {
   font-family: "Edo SZ";
   font-size: 48px;
   text-align: center;
-  color: #77E6C0;
+  color: #AFF1DA;
 }
 
 .about__title span {
@@ -402,7 +402,7 @@ i {
   font-family: "Edo SZ";
   font-size: 48px;
   text-align: left;
-  color: #77E6C0;
+  color: #AFF1DA;
   padding-bottom: 50px;
 }
 
@@ -504,7 +504,7 @@ i {
   font-family: "Edo SZ";
   font-size: 48px;
   text-align: center;
-  color: #77E6C0;
+  color: #AFF1DA;
   padding-bottom: 50px;
 }
 
@@ -560,7 +560,7 @@ i {
   font-family: "Edo SZ";
   font-size: 48px;
   text-align: center;
-  color: #77E6C0;
+  color: #AFF1DA;
   padding-bottom: 115px;
 }
 
@@ -706,7 +706,7 @@ i {
   font-family: "Edo SZ";
   font-size: 48px;
   text-align: left;
-  color: #77E6C0;
+  color: #AFF1DA;
   padding-bottom: 50px;
 }
 
@@ -824,6 +824,49 @@ i {
   transform: translateX(100%) rotate(45deg);
 }
 
+.projects {
+  margin: 90px 0px 100px;
+  background-color: #F9EA8F;
+}
+
+.projects .projects-wrapper {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+}
+
+.projects .project {
+  display: flex;
+}
+
+.projects .project__icon {
+  display: flex;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  margin: 20px;
+}
+
+.projects .project__details {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.projects .project__details__num {
+  font-family: "Edo SZ";
+  color: #77E6C0;
+  font-size: 40px;
+}
+
+.projects .project__details__title {
+  color: #9DA5A2;
+  font-size: 19.2px;
+  font-weight: bold;
+}
+
 /***************** CONTACT SECTION *****************/
 .contact {
   width: 90%;
@@ -834,7 +877,7 @@ i {
   font-family: "Edo SZ";
   font-size: 48px;
   text-align: left;
-  color: #77E6C0;
+  color: #AFF1DA;
   padding-bottom: 50px;
 }
 

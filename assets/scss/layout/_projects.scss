@@ -1,0 +1,40 @@
+.projects {
+    margin: ($general-spacing * 4.5) 0px ($general-spacing * 5);
+    background-color: $clr-yellow;
+
+    .projects-wrapper {
+        @include center();
+        @include flexy(space-between);
+        padding: $general-spacing * 2;
+    }
+
+    .project {
+        @include flexy();
+
+        
+        &__icon {
+            @include flexy($align: center);
+            width: 60px;
+            height: 60px;
+            margin: $general-spacing;
+            
+        }
+
+        &__details {
+            @include flexy(center, $dir: column);
+
+            &__num {
+                font-family: $ff-upper;
+                color: $clr-green-dark;
+                font-size: $base-fs * 2.5;
+            }
+
+            &__title {
+                color: $clr-gray;
+                font-size: $base-fs * 1.2;
+                font-weight: bold;
+            }
+        }
+
+    }
+}
