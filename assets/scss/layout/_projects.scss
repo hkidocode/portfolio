@@ -2,7 +2,7 @@
     margin: ($general-spacing * 4.5) 0px ($general-spacing * 5);
     background-color: $clr-yellow;
 
-    .projects-wrapper {
+    .counter {
         @include center();
         @include flexy(space-between);
         padding: $general-spacing * 2;

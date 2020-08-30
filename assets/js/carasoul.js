@@ -5,7 +5,6 @@ const prevButton = document.querySelector('.carasoul__previous');
 const nextButton = document.querySelector('.carasoul__next');
 const dotsNav = document.querySelector('.mentors__nav');
 const dots = Array.from(dotsNav.children);
-console.log(dots);
 
 // get the width of the first slide
 const slideWidth = slides[0].getBoundingClientRect().width;

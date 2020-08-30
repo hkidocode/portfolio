@@ -603,7 +603,7 @@ i {
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  height: 400px;
+  height: 450px;
 }
 
 .carasoul__track-container {
@@ -829,7 +829,7 @@ i {
   background-color: #F9EA8F;
 }
 
-.projects .projects-wrapper {
+.projects .counter {
   width: 90%;
   margin: 0 auto;
   display: flex;
