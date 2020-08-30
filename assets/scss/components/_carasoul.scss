@@ -1,7 +1,7 @@
 .carasoul {
     @include center(80%);
     @include flexy(space-between);
-    height: 450px;
+    height: 430px;
 
     &__track-container {
         height: 100%;
@@ -20,6 +20,7 @@
         
 
         .mentor {
+            min-width: 100%;
             background-color: $clr-green;
             padding: 0px ($general-spacing * 1.5);
             position: absolute;

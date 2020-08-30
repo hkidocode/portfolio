@@ -1,11 +1,11 @@
 .mentors {
     @include center();
-    padding-top: ($general-spacing * 4.5);
+    padding-top: $general-spacing * 4.5;
     
 
     &__title {
         @include title-style(center);
-        padding-bottom: $general-spacing * 5.75;
+        padding-bottom: $general-spacing * 2.5;
     }
 
     &__nav {

@@ -14,6 +14,10 @@
 }
 
 /***************** BASIC STYLE *****************/
+html {
+  overflow-x: hidden;
+}
+
 body {
   font-family: "Abel", sans-serif;
   color: #635555;
@@ -129,6 +133,7 @@ i {
 .banner img {
   -webkit-filter: saturate(2);
           filter: saturate(2);
+  min-width: 100%;
 }
 
 .banner .content {
@@ -561,7 +566,7 @@ i {
   font-size: 48px;
   text-align: center;
   color: #AFF1DA;
-  padding-bottom: 115px;
+  padding-bottom: 50px;
 }
 
 .mentors__title span {
@@ -603,7 +608,7 @@ i {
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  height: 450px;
+  height: 430px;
 }
 
 .carasoul__track-container {
@@ -625,6 +630,7 @@ i {
 }
 
 .carasoul__track .mentor {
+  min-width: 100%;
   background-color: #AFF1DA;
   padding: 0px 30px;
   position: absolute;
