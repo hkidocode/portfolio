@@ -19,13 +19,12 @@
 /***************** BASIC STYLE *****************/
 
 html {
-    width: 100vw;
+    overflow-x: hidden;
 }
 
 body {
     font-family: $ff-normal;
     color: $clr-p;
-    overflow-x: hidden;
 }
 
 img {

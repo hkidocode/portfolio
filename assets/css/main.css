@@ -15,13 +15,12 @@
 
 /***************** BASIC STYLE *****************/
 html {
-  width: 100vw;
+  overflow-x: hidden;
 }
 
 body {
   font-family: "Abel", sans-serif;
   color: #635555;
-  overflow-x: hidden;
 }
 
 img {
@@ -115,21 +114,146 @@ i {
 
 /***************** BLOG SECTION *****************/
 .banner {
-  background: url("https://scontent-mrs2-1.xx.fbcdn.net/v/t1.0-9/118602930_3305616362838662_294611209588844783_o.jpg?_nc_cat=111&_nc_sid=730e14&_nc_eui2=AeHbvQxitx_xfOV8wBvAii3BYNqBZmfBtxlg2oFmZ8G3GSntayuPXJ4GzDx48VHVrvzayQfDKYSky61RKaqlgrbQ&_nc_ohc=TeTlzzWHt1YAX_F2pFs&_nc_ht=scontent-mrs2-1.xx&oh=9b327ecbd5060a006abe3a646fb82ea8&oe=5F732590");
-  background-size: 100%;
-  width: 100%;
-  min-height: 75vh;
   position: relative;
+  width: 100%;
+  height: 100%;
 }
 
-.banner__container {
+.banner::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
+  height: 99.2%;
+  background-image: linear-gradient(to right, #0aff1d, rgba(10, 255, 29, 0.4));
+  opacity: .5;
+}
+
+.banner img {
+  -webkit-filter: saturate(2);
+          filter: saturate(2);
+  min-width: 100%;
 }
 
 .banner .content {
-  width: 80%;
-  margin: 0 auto;
-  padding-top: 20vh;
+  position: absolute;
+  z-index: 1;
+  top: 30%;
+  left: 7.5%;
+  right: 7.5%;
+}
+
+.banner .content__greeting {
+  color: #AFF1DA;
+  background-color: #FFFFFF;
+  font-size: 27.2px;
+  font-weight: bold;
+  padding: 2.5px 10px;
+  border-radius: 9px;
+}
+
+.banner .content__fullname {
+  font-size: 60.8px;
+  color: #F9EA8F;
+  font-weight: lighter;
+  margin: 4px 0px;
+  letter-spacing: 2px;
+  position: relative;
+}
+
+.banner .content__fullname::after {
+  content: '';
+  width: 60px;
+  height: 4px;
+  background-color: #F9EA8F;
+  position: absolute;
+  transform: rotate(90deg);
+  top: 50%;
+}
+
+.banner .content__fullname span {
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+
+.banner .content__job {
+  color: #FFFFFF;
+  font-size: 32px;
+  letter-spacing: 1px;
+}
+
+.banner .content__button {
+  display: inline-block;
+  margin: 40px 10px;
+  width: 200px;
+  height: 50px;
+  background-color: #F9EA8F;
+  color: #77E6C0;
+  border-radius: 30px;
+  border: none;
+  font-family: "Edo SZ";
+  text-align: center;
+  line-height: 50px;
+  font-size: 24px;
+  position: relative;
+  overflow: hidden;
+}
+
+.banner .content__button::before {
+  content: '';
+  width: 100%;
+  height: 20px;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateX(-100%) rotate(45deg);
+  transition: all .5s ease-in-out;
+}
+
+.banner .content__button:hover {
+  background-color: #FFFFFF;
+  border: 2px solid #F9EA8F;
+}
+
+.banner .content__button:hover::before {
+  transform: translateX(100%) rotate(45deg);
+}
+
+.banner .social {
+  width: 20%;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  bottom: -30px;
+  left: 30px;
+  z-index: 1;
+}
+
+.banner .social__icon a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border: 1px solid #FFFFFF;
+  border-radius: 50%;
+  transition: background-color .2s ease-in-out;
+}
+
+.banner .social__icon a:hover {
+  background-color: #FFFFFF;
+}
+
+.banner .social__icon a:hover > i {
+  color: #635555;
+}
+
+.banner .social__icon i {
+  color: #FFFFFF;
+  font-size: 19.2px;
+  line-height: 40px;
+  transition: color .3s ease-in-out;
 }
 
 /***************** ABOUT SECTION *****************/
