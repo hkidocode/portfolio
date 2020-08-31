@@ -37,7 +37,7 @@ const hideModal = () => {
 }
 timesButton.addEventListener('click', hideModal);
 
-// hide modal if window is clicked
+// hide modal if outside modal is clicked
 const outsideModal = (e) => {
     if(e.target == modal) {
         modal.style.display = 'none';
