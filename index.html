@@ -89,8 +89,26 @@
                         <a href="#" class="btn-wrap__download">Download cv</a>
                         <a href="#" class="btn-wrap__view">Quick view</a>
                     </div>
+                    <!-- Start Modal -->
+                    <div class="modal">
+                        <div class="modal-content">
+                            <i class="fas fa-times"></i>
+                            <div class="clearfix"></div>
+                            <h3>Hard skills</h3>
+                            <div class="skill-container">
+                                <div class="progress-skill">
+                                    <svg class="progress-skill__shape">
+                                        <circle cx="60" cy="60" r="50"></circle>
+                                    </svg>
+                                    <div class="progress-skill__counter">0</div>
+                                    <div class="progress-skill__stop"></div>
+                                    <div class="progress-skill__name">Adobe XD</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Modal -->
                 </div>
-
             </div>
         </section>
         <!--End about section-->
@@ -284,7 +302,8 @@
         <section class="projects">
             <div class="counter">
                 <div class="project">
-                    <img src="assets/img/ionic-ios-checkmark-circle-outline.png" alt="checkmark-picture" class="project__icon">
+                    <img src="assets/img/ionic-ios-checkmark-circle-outline.png" alt="checkmark-picture"
+                        class="project__icon">
                     <div class="project__details">
                         <p class="project__details__num" data-target="10">0</p>
                         <p class="project__details__title">Projects Done</p>
@@ -371,6 +390,7 @@
     <!--End footer section-->
 
     <!--Animation vanilla js-->
+    <script src="assets/js/modal.js"></script>
     <script src="assets/js/carasoul.js"></script>
     <script src="assets/js/counter.js"></script>
 

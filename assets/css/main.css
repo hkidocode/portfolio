@@ -396,6 +396,130 @@ i {
   transform: translateX(100%) rotate(45deg);
 }
 
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: rgba(128, 128, 128, 0.8);
+}
+
+.modal .modal-content {
+  width: 70%;
+  margin: 0 auto;
+  height: 85vh;
+  margin-top: 7.5vh;
+  border-radius: 6px;
+  padding: 30px;
+  padding-top: 20px;
+  background-color: #FFFFFF;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.35);
+  -webkit-animation: modal .3s ease-in;
+          animation: modal .3s ease-in;
+}
+
+@-webkit-keyframes modal {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes modal {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.modal .modal-content h3 {
+  font-family: "Edo SZ";
+  color: #AFF1DA;
+  font-size: 32px;
+}
+
+.modal .modal-content i {
+  float: right;
+  font-size: 24px;
+}
+
+.modal .modal-content .clearfix {
+  clear: both;
+}
+
+.modal .skill-container {
+  display: flex;
+}
+
+.modal .progress-skill {
+  position: relative;
+}
+
+.modal .progress-skill__shape {
+  width: 120px;
+  height: 120px;
+  transform: rotate(-90deg);
+}
+
+.modal .progress-skill circle {
+  fill: transparent;
+  stroke: #F9EA8F;
+  stroke-width: 6;
+  stroke-linecap: round;
+  stroke-dasharray: 500;
+  stroke-dashoffset: 500;
+  -webkit-animation: animate 3s ease-in;
+          animation: animate 3s ease-in;
+}
+
+.modal .progress-skill__counter {
+  position: absolute;
+  top: 42%;
+  left: 49%;
+  transform: translate(-42%, -49%);
+  color: #F9EA8F;
+  font-size: 28.8px;
+  font-weight: bold;
+}
+
+.modal .progress-skill__stop {
+  height: 105px;
+  width: 105px;
+  background-color: transparent;
+  border: 6px solid #F9EA8F;
+  border-radius: 50%;
+  margin: 0 auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+@-webkit-keyframes animate {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes animate {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+.modal .progress-skill__name {
+  text-align: center;
+  font-weight: 700;
+  font-size: 17.6px;
+}
+
 /***************** SERVICES SECTION *****************/
 .services {
   width: 90%;
