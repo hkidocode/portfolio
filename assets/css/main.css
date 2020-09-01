@@ -14,11 +14,8 @@
 }
 
 /***************** BASIC STYLE *****************/
-html {
-  overflow-x: hidden;
-}
-
 body {
+  width: 100vw;
   font-family: "Abel", sans-serif;
   color: #635555;
 }
@@ -133,7 +130,6 @@ i {
 .banner img {
   -webkit-filter: saturate(2);
           filter: saturate(2);
-  min-width: 100%;
 }
 
 .banner .content {
@@ -443,6 +439,7 @@ i {
   font-family: "Edo SZ";
   color: #AFF1DA;
   font-size: 32px;
+  margin-bottom: 20px;
 }
 
 .modal .modal-content i {
@@ -456,65 +453,10 @@ i {
 
 .modal .skill-container {
   display: flex;
+  justify-content: space-between;
 }
 
-.modal .progress-skill {
-  position: relative;
-}
-
-.modal .progress-skill__shape {
-  width: 120px;
-  height: 120px;
-  transform: rotate(-90deg);
-}
-
-.modal .progress-skill circle {
-  fill: transparent;
-  stroke: #F9EA8F;
-  stroke-width: 6;
-  stroke-linecap: round;
-  stroke-dasharray: 500;
-  stroke-dashoffset: 500;
-  -webkit-animation: animate 3s ease-in;
-          animation: animate 3s ease-in;
-}
-
-.modal .progress-skill__counter {
-  position: absolute;
-  top: 42%;
-  left: 49%;
-  transform: translate(-42%, -49%);
-  color: #F9EA8F;
-  font-size: 28.8px;
-  font-weight: bold;
-}
-
-.modal .progress-skill__stop {
-  height: 105px;
-  width: 105px;
-  background-color: transparent;
-  border: 6px solid #F9EA8F;
-  border-radius: 50%;
-  margin: 0 auto;
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: none;
-}
-
-@-webkit-keyframes animate {
-  100% {
-    stroke-dashoffset: 0;
-  }
-}
-
-@keyframes animate {
-  100% {
-    stroke-dashoffset: 0;
-  }
-}
-
-.modal .progress-skill__name {
+.modal .skill__name {
   text-align: center;
   font-weight: 700;
   font-size: 17.6px;

@@ -1,3 +1,4 @@
+
 .modal {
     display: none;
     position: fixed;
@@ -33,6 +34,7 @@
             font-family: $ff-upper;
             color: $clr-green;
             font-size: $base-fs * 2;
+            margin-bottom: $general-spacing;
         }
 
         i {
@@ -47,65 +49,16 @@
     }
 
     .skill-container {
-        @include flexy();
-
+        @include flexy(space-between);
     }
 
-    .progress-skill {
-        position: relative;
-
-        &__shape {
-            width: 120px;
-            height: 120px;
-            transform: rotate(-90deg);
-        }
-
-        circle {
-            fill: transparent;
-            stroke: $clr-yellow;
-            stroke-width: 6;
-            stroke-linecap: round;
-            stroke-dasharray: 500;
-            stroke-dashoffset: 500;
-            animation: animate 3s ease-in;
-        }
-
-        &__counter {
-            position: absolute;
-            top: 42%;
-            left: 49%;
-            transform: translate(-42%, -49%);
-            color: $clr-yellow;
-            font-size: $base-fs * 1.8;
-            font-weight: bold;
-            
-            
-        }
-
-        &__stop {
-            height: 105px;
-            width: 105px;
-            background-color: transparent;
-            border: 6px solid $clr-yellow;
-            border-radius: 50%;
-            margin: 0 auto;
-            position: absolute;
-            top: 0;
-            left: 0;
-            display: none;
-
-        }
-
-        @keyframes animate {
-            100% {
-                stroke-dashoffset: 0;
-            }
-        }
-
+    .skill {
         &__name {
             text-align: center;
             font-weight: 700;
             font-size: $base-fs * 1.1;
         }
     }
+
+    
 }

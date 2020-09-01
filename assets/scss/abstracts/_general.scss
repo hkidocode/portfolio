@@ -18,11 +18,9 @@
 
 /***************** BASIC STYLE *****************/
 
-html {
-    overflow-x: hidden;
-}
 
 body {
+    width: 100vw;
     font-family: $ff-normal;
     color: $clr-p;
 }
