@@ -15,12 +15,13 @@
 
 /***************** BASIC STYLE *****************/
 html {
-  overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 body {
   font-family: "Abel", sans-serif;
   color: #635555;
+  overflow-x: hidden;
 }
 
 img {
@@ -261,6 +262,7 @@ i {
   width: 90%;
   margin: 0 auto;
   padding-top: 90px;
+  scroll-behavior: smooth;
 }
 
 .about__title {
@@ -655,7 +657,7 @@ i {
 }
 
 .work .work-type {
-  width: 60%;
+  width: 65%;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;

@@ -17,7 +17,7 @@
     }
 
     .work-type {
-        @include center(60%);
+        @include center(65%);
         @include flexy(space-between);
 
         &__item {
