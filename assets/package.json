@@ -21,8 +21,5 @@
     "not IE 11",
     "not IE_Mob 11",
     "maintained node versions"
-  ],
-  "dependencies": {
-    "particles.js": "^2.0.0"
-  }
+  ]
 }

@@ -1,17 +1,36 @@
 /***************** BLOG SECTION *****************/
 
 .banner {
-    background-image: url("https://scontent.fcmn5-1.fna.fbcdn.net/v/t1.0-9/118780579_3324722130928085_4913216970256792011_o.jpg?_nc_cat=110&_nc_sid=730e14&_nc_eui2=AeGga3mnJtZ_fxs9VU1zP2petbfrAOoIdjK1t-sA6gh2MuMMNRsWHa8Corv3r8T4zcsqUbRxWSUEgKSW18KhVcm0&_nc_ohc=p7LHeaWnSMMAX8ZrexA&_nc_ht=scontent.fcmn5-1.fna&oh=ae1b4a29c890548a47144567d9c0d4ce&oe=5F751B1B");
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 85vh;
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 99.2%;
+        background-image: linear-gradient(to right, rgba(10,255,29, 1), rgba(10,255,29,.4));
+        opacity: .5;
+    }
+
+
+    img {
+        filter: saturate(2);
+        min-width: 100%;
+    }
 
     .content {
-        @include center();
-        padding-top: 18vh;
+        position: absolute;
+        z-index: 1;
+        top: 30%;
+        left: 7.5%;
+        right: 7.5%;
 
         &__greeting {
-            color: $clr-green-dark;
+            color: $clr-green;
             background-color: $clr-white;
             font-size: $base-fs * 1.7;
             font-weight: bold;
@@ -25,11 +44,20 @@
             font-weight: lighter;
             margin: ($general-spacing / 5) 0px;
             letter-spacing: 2px;
+            position: relative;
+
+            &::after {
+                content: '';
+                width: 60px;
+                height: 4px;
+                background-color: $clr-yellow;
+                position: absolute;
+                transform: rotate(90deg);
+                top: 50%;
+            }
         }
 
         &__fullname span {
-            font-family: $ff-upper;
-            color: $clr-green-dark;
             font-weight: bold;
             letter-spacing: 3px;
         }
@@ -42,7 +70,7 @@
 
         &__button {
             display: inline-block;
-            margin: ($general-spacing * 1.4) ($general-spacing / 2);
+            margin: ($general-spacing * 2) ($general-spacing / 2);
             @include btn-style(200px, 50px);
             font-size: $base-fs * 1.5;
             position: relative;
@@ -78,7 +106,11 @@
     .social {
         width: 20%;
         @include flexy(space-between);
-        
+        position: absolute;
+        bottom: -30px;
+        left: 30px;
+        z-index: 1;
+
         &__icon a {
             display: inline-block;
             width: 40px;
