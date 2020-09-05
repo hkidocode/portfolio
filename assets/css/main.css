@@ -728,8 +728,8 @@ i {
 
 .work .work-projects .hide {
   display: none;
-  -webkit-animation: hideItem .5s ease-in-ou;
-          animation: hideItem .5s ease-in-ou;
+  -webkit-animation: hideItem .5s ease-in-out;
+          animation: hideItem .5s ease-in-out;
 }
 
 .work .work-projects .show {
