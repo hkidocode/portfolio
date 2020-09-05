@@ -48,7 +48,7 @@
         <!--Start banner-->
         <section id="banner" class="banner">
             <div class="content" data-aos="fade-up">
-                <span class="content__greeting">Hello!</span>
+                <span class="content__greeting">Hello 👋</span>
                 <h1 class="content__fullname">I am<span> Mustapha Kadouri</span></h1>
                 <p class="content__job">Web Designer, Frontend Developer, and Backend Developer</p>
                 <a href="#work" class="content__button">View my work</a>
@@ -81,7 +81,8 @@
                     <div class="border"></div>
                 </div>
                 <div class="about__description">
-                    <p data-aos="fade-left" data-aos-delay="500">Hi! I am Mustapha Kadouri, a web designer/developer focused on crafting great web experiences.
+                    <p data-aos="fade-left" data-aos-delay="500">Hi! I am Mustapha Kadouri, a web designer/developer
+                        focused on crafting great web experiences.
                         Designing
                         and Coding have been my passion since the days I started learning a module at university and
                         participating in One Million Arab Coders Initiative Mobile Development Track but I found myself
@@ -154,20 +155,57 @@
                 to HTML, Web Development, PHP, UI/UX Design.
                 Yeah! I do all of them, that is my passion.
             </p>
-            <div>
-                <ul class="work-type">
-                    <li class="work-type__item work-type__item--active"><a href="#"></a>All</li>
-                    <li class="work-type__item"><a href="#"></a>Design</li>
-                    <li class="work-type__item"><a href="#"></a>Fronted</li>
-                    <li class="work-type__item"><a href="#"></a>Backend</li>
-                </ul>
-                <div class="work-projets">
-                    <div class=""></div>
-                    <div class=""></div>
-                    <div class=""></div>
-                    <div class=""></div>
-                    <div class=""></div>
-                    <div class=""></div>
+            <ul class="work-type">
+                <li class="work-type__item active" data-filter="all"><a href="#"></a>All</li>
+                <li class="work-type__item" data-filter="design"><a href="#"></a>Design</li>
+                <li class="work-type__item" data-filter="frontend"><a href="#"></a>Fronted</li>
+                <li class="work-type__item" data-filter="backend"><a href="#"></a>Backend</li>
+            </ul>
+            <div class="work-projects">
+                <div class="work-projects__item" data-category="design"
+                data-category="frontend">
+                    <h3>Analog Clock</h3>
+                    <div class="details">
+                        <p class="details__desc">Beginner friendly project</p>
+                        <a href="https://hkidocode.github.io/clock-html-css-js/" target="_blank" class="details__link">Visite website</a>
+                    </div>
+                </div>
+                <div class="work-projects__item" data-category="design"
+                data-category="frontend">
+                    <h3>Gloabl Goals</h3>
+                    <div class="details">
+                        <p class="details__desc">Organization that have goals to ending poverty, fighting inequality and addressing the urgency of climate change.</p>
+                        <a href="https://hkidocode.github.io/global-goals/" target="_blank" class="details__link">Visite website</a>
+                    </div>
+                </div>
+                <div class="work-projects__item" data-category="frontend">
+                    <h3>Bio Chèvre</h3>
+                    <div class="details">
+                        <p class="details__desc">Static showcase intended for a cooperative specializing in
+                            production of goat's milk derivatives</p>
+                        <a href="https://hkidocode.github.io/cooper-chevre/" target="_blank" class="details__link">Visite website</a>
+                    </div>
+                </div>
+                <div class="work-projects__item" data-category="frontend">
+                    <h3>Book Mark</h3>
+                    <div class="details">
+                        <p class="details__desc">Dynamic showcase site for a company specializing in organizing your favorite websites</p>
+                        <a href="https://hkidocode.github.io/bookmark-website/" target="_blank" class="details__link">Visite website</a>
+                    </div>
+                </div>
+                <div class="work-projects__item" data-category="frontend">
+                    <h3>Covid 19</h3>
+                    <div class="details">
+                        <p class="details__desc">Site that presents symptoms to watch out for and how to protect yourself and protect others from Coronavirus</p>
+                        <a href="https://hkidocode.github.io/C2N3_C3N3/" target="_blank" class="details__link">Visite website</a>
+                    </div>
+                </div>
+                <div class="work-projects__item" data-category="backend">
+                    <h3>The Perfect Cup</h3>
+                    <div class="details">
+                        <p class="details__desc">Website that provides the best recipes around the world</p>
+                        <a href="https://hkidocode.github.io/back-end-site-web/" target="_blank" class="details__link">Visite website</a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -240,6 +278,8 @@
         <!--Start mentors section-->
         <section class="mentors">
             <h1 class="mentors__title"><span></span>What my mentors say<span></span></h1>
+            <p class="blog__description">People I've learn with have said some nice things...
+            </p>
             <div class="carasoul" data-aos="fade-right" data-aos-delay="400">
                 <button class="carasoul__previous is-hidden">V</button>
                 <div class="carasoul__track-container" data-aos="fade-left">
@@ -399,6 +439,7 @@
 
     <!--Animation vanilla js-->
     <script src="assets/js/modal.js"></script>
+    <script src="assets/js/filter.js"></script>
     <script src="assets/js/carasoul.js"></script>
     <script src="assets/js/counter.js"></script>
     <!-- AOS JS -->

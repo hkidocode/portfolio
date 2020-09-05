@@ -17,19 +17,120 @@
     }
 
     .work-type {
-        @include center(65%);
+        @include center(70%);
         @include flexy(space-between);
+        margin-bottom: $general-spacing * 3.5;
 
         &__item {
             cursor: pointer;
             @include btn-style(140px, 50px, $bg-color: #FFF,$color: $clr-p, $border: 2px solid $clr-yellow); 
             font-size: $base-fs * 1.2;
+            flex-basis: 20%;
 
-            &--active {
-                background-color: $clr-yellow;
-            }
+        }
+
+        .active {
+            background-color: $clr-yellow;
         }
 
     }
+
+    .work-projects {
+        @include center();
+        height: 480px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-gap: 20px;
+
+        &__item {
+            padding: $general-spacing;
+            border-radius: 3px;
+            background-color: $clr-green;
+            position: relative;
+        }
+
+        &__item:hover > .details {
+            transform: translate(-50%, -50%) scale(1);
+        }
+
+        h3 {
+            @include flexy(center, center);
+            cursor: pointer;
+            height: 100%;
+            font-size: $base-fs * 2.3;
+            color: $clr-white;
+            font-weight: 300;
+            text-align: center;
+        }
+
+        .details {
+            @include flexy(space-evenly, $dir: column);
+            width: 100%;
+            height: 99%;
+            text-align: center;
+            background-color: #E8F3F1;
+            padding: $general-spacing;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(0);
+            transition: all .6s ease-in-out;
+
+
+            &__desc {
+                font-weight: bold;
+                font-size: $base-fs * 1.25;
+            }
+
+            &__link {
+                display: inline-block;
+                @include btn-style(140px, 30px, $bg-color: $clr-yellow, $border: 2px solid $clr-yellow, $ln-h: 26px);
+                margin: 0 auto;
+                transition: all .2s ease-in-out;
+            }
+
+            &__link:hover {
+                background-color: $clr-white;
+                border: 2px solid $clr-yellow;
+            }
+            
+        }
+        .hide {
+            display: none;
+            animation: hideItem .5s ease-in-out;
+
+        }
+        
+        .show {
+            display: block;
+            animation: showItem .5s ease-in-out;
+        }
+
+        @keyframes showItem {
+            0% {
+                transform: scale(.5);
+                opacity: 0;
+            }
+
+            100% {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        @keyframes hideItem {
+            100% {
+                transform: scale(1);
+                opacity: 1;
+            }
+
+            0% {
+                transform: scale(.5);
+                opacity: 0;
+            }
+        }
+    }
+
     
 }

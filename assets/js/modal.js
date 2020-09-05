@@ -19,15 +19,18 @@
 // setInterval(frame, 50);
 // setTimeout(stopPoint, 3000)
 
+// select all elements to applied modal
 const quickView = document.querySelector('.btn-wrap__view');
+const detailsProject = document.querySelector('.z')
 const modal = document.querySelector('.modal');
 const timesButton = document.querySelector('.fa-times');
 
 
-// show modal if quick view button is clicked
 const showModal = () => {
     modal.style.display = 'block';
 }
+
+// show modal if quick view button is clicked
 quickView.addEventListener('click', showModal);
 
 

@@ -4,11 +4,12 @@
     background-image: url("https://scontent.fcmn5-1.fna.fbcdn.net/v/t1.0-9/118780579_3324722130928085_4913216970256792011_o.jpg?_nc_cat=110&_nc_sid=730e14&_nc_eui2=AeGga3mnJtZ_fxs9VU1zP2petbfrAOoIdjK1t-sA6gh2MuMMNRsWHa8Corv3r8T4zcsqUbRxWSUEgKSW18KhVcm0&_nc_ohc=p7LHeaWnSMMAX8ZrexA&_nc_ht=scontent.fcmn5-1.fna&oh=ae1b4a29c890548a47144567d9c0d4ce&oe=5F751B1B");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 85vh;
+    height: 500px;
 
     .content {
         @include center();
-        padding-top: 18vh;
+        padding-top: 10%;
+        
 
         &__greeting {
             color: $clr-green-dark;
