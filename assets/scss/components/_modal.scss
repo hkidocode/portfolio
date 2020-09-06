@@ -5,7 +5,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: 1;
+    z-index: 999;
     background-color: rgba($color: grey, $alpha: .8);
 
     .modal-content {
@@ -33,6 +33,7 @@
             font-family: $ff-upper;
             color: $clr-green;
             font-size: $base-fs * 2;
+            margin-bottom: $general-spacing;
         }
 
         i {
@@ -46,66 +47,189 @@
    
     }
 
-    .skill-container {
-        @include flexy();
+    .skills-container {
+        @include flexy(space-between);
+        margin: $general-spacing / 2;
 
-    }
-
-    .progress-skill {
-        position: relative;
-
-        &__shape {
-            width: 120px;
-            height: 120px;
-            transform: rotate(-90deg);
+        .hard-skills, .soft-skills {
+            flex-basis: 45%;
+            text-align: center;
         }
-
-        circle {
-            fill: transparent;
-            stroke: $clr-yellow;
-            stroke-width: 6;
-            stroke-linecap: round;
-            stroke-dasharray: 500;
-            stroke-dashoffset: 500;
-            animation: animate 3s ease-in;
-        }
-
-        &__counter {
-            position: absolute;
-            top: 42%;
-            left: 49%;
-            transform: translate(-42%, -49%);
-            color: $clr-yellow;
-            font-size: $base-fs * 1.8;
-            font-weight: bold;
             
-            
-        }
+        .skill-info {
+            @include flexy(space-between);
+            margin: ($general-spacing / 3) ($general-spacing / 2);
 
-        &__stop {
-            height: 105px;
-            width: 105px;
-            background-color: transparent;
-            border: 6px solid $clr-yellow;
-            border-radius: 50%;
-            margin: 0 auto;
-            position: absolute;
-            top: 0;
-            left: 0;
-            display: none;
+            &__name, &__level {
+                margin: 0;
+                font-size: $base-fs * 1.1;
+                font-weight: 600;
+            }
 
         }
 
-        @keyframes animate {
+        .outer-progress {
+            width: 100%;
+            padding: 2px;
+            border: 2px solid $clr-green;
+            box-shadow: 0 0 5px $clr-green-dark;
+        }
+
+        .inner-progress {
+            height: 6px;
+            background-color: $clr-yellow;
+        }
+
+        .xd {
+            width: 80%;
+            animation: xd 2.4s ease;
+        }
+
+        .html {
+            width: 85%;
+            animation: html 2.55s ease;
+        }
+
+        .css {
+            width: 80%;
+            animation: css 2.4s ease;
+        }
+
+        .js {
+            width: 70%;
+            animation: js 2.1s ease;
+        }
+
+        .sql {
+            width: 70%;
+            animation: sql 2.1s ease;
+        }
+
+        .php {
+            width: 65%;
+            animation: php 1.95s ease;
+        }
+
+        .attitude {
+            width: 95%;
+            animation: attitude 2.85s ease;
+        }
+
+        .solving {
+            width: 70%;
+            animation: solving 2.1s ease;
+        }
+
+        .creativity {
+            width: 65%;
+            animation: creativity 1.95s ease;
+        }
+
+        .time-manage {
+            width: 60%;
+            animation: time-manage 1.8s ease;
+        }
+
+
+        @keyframes xd {
+            0% {
+                width: 0%;
+            }
+
             100% {
-                stroke-dashoffset: 0;
+                width: 80%;
             }
         }
 
-        &__name {
-            text-align: center;
-            font-weight: 700;
-            font-size: $base-fs * 1.1;
+        @keyframes html {
+            0% {
+                width: 0%;
+            }
+
+            100% {
+                width: 85%;
+            }
+        }
+
+        @keyframes css {
+            0% {
+                width: 0%;
+            }
+
+            100% {
+                width: 80%;
+            }
+        }
+
+        @keyframes js {
+            0% {
+                width: 0%;
+            }
+
+            100% {
+                width: 70%;
+            }
+        }
+
+        @keyframes sql {
+            0% {
+                width: 0%;
+            }
+
+            100% {
+                width: 70%;
+            }
+        }
+
+        @keyframes php {
+            0% {
+                width: 0%;
+            }
+
+            100% {
+                width: 65%;
+            }
+        }
+
+        @keyframes attitude {
+            0% {
+                width: 0%;
+            }
+
+            100% {
+                width: 95%;
+            }
+        }
+
+        @keyframes solving{
+            0% {
+                width: 0%;
+            }
+
+            100% {
+                width: 70%;
+            }
+        }
+
+        @keyframes creativity {
+            0% {
+                width: 0%;
+            }
+
+            100% {
+                width: 65%;
+            }
+        }
+
+        @keyframes time-manage{
+            0% {
+                width: 0%;
+            }
+
+            100% {
+                width: 60%;
+            }
         }
     }
+
 }

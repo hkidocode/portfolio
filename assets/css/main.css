@@ -388,7 +388,7 @@ i {
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: 1;
+  z-index: 999;
   background-color: rgba(128, 128, 128, 0.8);
 }
 
@@ -428,6 +428,7 @@ i {
   font-family: "Edo SZ";
   color: #AFF1DA;
   font-size: 32px;
+  margin-bottom: 20px;
 }
 
 .modal .modal-content i {
@@ -439,70 +440,279 @@ i {
   clear: both;
 }
 
-.modal .skill-container {
+.modal .skills-container {
   display: flex;
+  justify-content: space-between;
+  margin: 10px;
 }
 
-.modal .progress-skill {
-  position: relative;
-}
-
-.modal .progress-skill__shape {
-  width: 120px;
-  height: 120px;
-  transform: rotate(-90deg);
-}
-
-.modal .progress-skill circle {
-  fill: transparent;
-  stroke: #F9EA8F;
-  stroke-width: 6;
-  stroke-linecap: round;
-  stroke-dasharray: 500;
-  stroke-dashoffset: 500;
-  -webkit-animation: animate 3s ease-in;
-          animation: animate 3s ease-in;
-}
-
-.modal .progress-skill__counter {
-  position: absolute;
-  top: 42%;
-  left: 49%;
-  transform: translate(-42%, -49%);
-  color: #F9EA8F;
-  font-size: 28.8px;
-  font-weight: bold;
-}
-
-.modal .progress-skill__stop {
-  height: 105px;
-  width: 105px;
-  background-color: transparent;
-  border: 6px solid #F9EA8F;
-  border-radius: 50%;
-  margin: 0 auto;
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: none;
-}
-
-@-webkit-keyframes animate {
-  100% {
-    stroke-dashoffset: 0;
-  }
-}
-
-@keyframes animate {
-  100% {
-    stroke-dashoffset: 0;
-  }
-}
-
-.modal .progress-skill__name {
+.modal .skills-container .hard-skills, .modal .skills-container .soft-skills {
+  flex-basis: 45%;
   text-align: center;
-  font-weight: 700;
+}
+
+.modal .skills-container .skill-info {
+  display: flex;
+  justify-content: space-between;
+  margin: 6.66667px 10px;
+}
+
+.modal .skills-container .skill-info__name, .modal .skills-container .skill-info__level {
+  margin: 0;
   font-size: 17.6px;
+  font-weight: 600;
+}
+
+.modal .skills-container .outer-progress {
+  width: 100%;
+  padding: 2px;
+  border: 2px solid #AFF1DA;
+  box-shadow: 0 0 5px #77E6C0;
+}
+
+.modal .skills-container .inner-progress {
+  height: 6px;
+  background-color: #F9EA8F;
+}
+
+.modal .skills-container .xd {
+  width: 80%;
+  -webkit-animation: xd 2.4s ease;
+          animation: xd 2.4s ease;
+}
+
+.modal .skills-container .html {
+  width: 85%;
+  -webkit-animation: html 2.55s ease;
+          animation: html 2.55s ease;
+}
+
+.modal .skills-container .css {
+  width: 80%;
+  -webkit-animation: css 2.4s ease;
+          animation: css 2.4s ease;
+}
+
+.modal .skills-container .js {
+  width: 70%;
+  -webkit-animation: js 2.1s ease;
+          animation: js 2.1s ease;
+}
+
+.modal .skills-container .sql {
+  width: 70%;
+  -webkit-animation: sql 2.1s ease;
+          animation: sql 2.1s ease;
+}
+
+.modal .skills-container .php {
+  width: 65%;
+  -webkit-animation: php 1.95s ease;
+          animation: php 1.95s ease;
+}
+
+.modal .skills-container .attitude {
+  width: 95%;
+  -webkit-animation: attitude 2.85s ease;
+          animation: attitude 2.85s ease;
+}
+
+.modal .skills-container .solving {
+  width: 70%;
+  -webkit-animation: solving 2.1s ease;
+          animation: solving 2.1s ease;
+}
+
+.modal .skills-container .creativity {
+  width: 65%;
+  -webkit-animation: creativity 1.95s ease;
+          animation: creativity 1.95s ease;
+}
+
+.modal .skills-container .time-manage {
+  width: 60%;
+  -webkit-animation: time-manage 1.8s ease;
+          animation: time-manage 1.8s ease;
+}
+
+@-webkit-keyframes xd {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 80%;
+  }
+}
+
+@keyframes xd {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 80%;
+  }
+}
+
+@-webkit-keyframes html {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 85%;
+  }
+}
+
+@keyframes html {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 85%;
+  }
+}
+
+@-webkit-keyframes css {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 80%;
+  }
+}
+
+@keyframes css {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 80%;
+  }
+}
+
+@-webkit-keyframes js {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 70%;
+  }
+}
+
+@keyframes js {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 70%;
+  }
+}
+
+@-webkit-keyframes sql {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 70%;
+  }
+}
+
+@keyframes sql {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 70%;
+  }
+}
+
+@-webkit-keyframes php {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 65%;
+  }
+}
+
+@keyframes php {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 65%;
+  }
+}
+
+@-webkit-keyframes attitude {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 95%;
+  }
+}
+
+@keyframes attitude {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 95%;
+  }
+}
+
+@-webkit-keyframes solving {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 70%;
+  }
+}
+
+@keyframes solving {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 70%;
+  }
+}
+
+@-webkit-keyframes creativity {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 65%;
+  }
+}
+
+@keyframes creativity {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 65%;
+  }
+}
+
+@-webkit-keyframes time-manage {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 60%;
+  }
+}
+
+@keyframes time-manage {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 60%;
+  }
 }
 
 /***************** SERVICES SECTION *****************/
