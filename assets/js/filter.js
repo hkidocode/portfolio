@@ -8,7 +8,7 @@ const projectItems = Array.from(document.querySelectorAll('.work-projects__item'
 filterButtons.forEach(button => {
     button.addEventListener('click', function () {
         // change background color when nav button clicked
-        projectsNav.querySelector('.active').classList.remove('active')
+        projectsNav.querySelector('.active').classList.remove('active');
         this.classList.add('active');
 
         const filterValue = this.getAttribute('data-filter');

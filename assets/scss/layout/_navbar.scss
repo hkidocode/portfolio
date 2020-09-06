@@ -6,8 +6,9 @@
 
 
 .navbar {
-    @include center();
-    padding: 20px 0px;
+    width: 100%;
+    padding: 15px 0px;
+    transition: all .3s ease;
 }
 
 .container {
@@ -15,10 +16,20 @@
     @include flexy(space-between);
 }
 
+.logo {
+    margin-left: 5%;
+}
+
 .logo img {
     width: 120px;
     height: 60px;
-    
+}
+
+.sticky {
+    position: fixed;
+    background-color: #E8F3F1;
+    z-index: 99;
+    padding: 0;
 }
 
 .nav {
@@ -33,22 +44,26 @@
     &__item a {
         color: $clr-p;
         font-size: $base-fs * 1.5;
-        transition: color .2s ease-out;
+        transition: all .2s ease-out;
     }
 
-    &__item .active {
-        color: $clr-green;
-    }
 
     &__item a:hover  {
         color: $clr-green;
+        border-bottom: 3px solid $clr-yellow;
         
+    }
+
+    .active {
+        color: $clr-green;
+        border-bottom: 3px solid $clr-yellow;
     }
 
 }
 
 .options {
     @include flexy(center, center);
+    margin-right: 5%;
 
     &__dark {
         cursor: pointer;
