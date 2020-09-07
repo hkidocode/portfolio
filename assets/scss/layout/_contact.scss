@@ -80,7 +80,6 @@
 
       .button {
         @include btn-style(100%, 50px);
-        font-size: $base-fs * 1.5;
         margin-bottom: $general-spacing * 6;
         outline: none;
       }

@@ -52,8 +52,6 @@
 
         &__download {
             @include btn-style(200px, 50px);
-            display: inline-block;
-            font-size: $base-fs * 1.5;
             margin-right: 60px;
             position: relative;
             overflow: hidden;
@@ -85,8 +83,6 @@
 
         &__view {
             @include btn-style(200px, 50px, $bg-color: #FFF, $border: 2px solid $clr-yellow);
-            display: inline-block;
-            font-size: $base-fs * 1.5;
             position: relative;
             overflow: hidden;
             transition: all .2s ease-in-out;

@@ -21,11 +21,13 @@
                  $bg-color: $clr-yellow,
                  $color: $clr-green-dark,
                  $f-family: $ff-upper,
+                 $fs: ($base-fs * 1.5),
                  $ln-h: 50px,
                  $border: none) {
-
+                        display: inline-block;
                         width: $w;
                         height: $h;
+                        font-size: $fs;
                         background-color: $bg-color;
                         color: $color;
                         border-radius: 30px;

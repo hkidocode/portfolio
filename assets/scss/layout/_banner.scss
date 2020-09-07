@@ -42,10 +42,8 @@
         }
 
         &__button {
-            display: inline-block;
-            margin: ($general-spacing * 1.4) ($general-spacing / 2);
             @include btn-style(200px, 50px);
-            font-size: $base-fs * 1.5;
+            margin: ($general-spacing * 1.4) ($general-spacing / 2);
             position: relative;
             overflow: hidden;
             
