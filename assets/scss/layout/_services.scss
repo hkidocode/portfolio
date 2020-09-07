@@ -10,10 +10,8 @@
     }
 
     &__description {
-        font-size: $fs-p;
-        @include center();
-        text-align: center;
-        padding-bottom: ($general-spacing * 4);
+        @include center(65%);
+        @include desc-style($fs-p, ($general-spacing * 4));
     }
 
     &__content {

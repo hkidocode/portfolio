@@ -7,6 +7,11 @@
       padding-bottom: $general-spacing * 2.5;
     }
 
+    &__description {
+      @include center(65%);
+      @include desc-style($fs-p, ($general-spacing * 4));
+    }
+
     &__infos {
       @include flexy(space-around);
       margin-bottom: $general-spacing * 3;

@@ -112,6 +112,7 @@ i {
 
 .options__dark {
   cursor: pointer;
+  font-size: 19.2px;
 }
 
 .options__language {
@@ -740,9 +741,9 @@ i {
 }
 
 .services__description {
-  font-size: 27.2px;
-  width: 90%;
+  width: 65%;
   margin: 0 auto;
+  font-size: 27.2px;
   text-align: center;
   padding-bottom: 80px;
 }
@@ -842,9 +843,9 @@ i {
 }
 
 .work__description {
-  font-size: 27.2px;
   width: 65%;
   margin: 0 auto;
+  font-size: 27.2px;
   text-align: center;
   padding-bottom: 80px;
 }
@@ -1029,6 +1030,14 @@ i {
   margin: 10px;
 }
 
+.mentors__description {
+  width: 65%;
+  margin: 0 auto;
+  font-size: 27.2px;
+  text-align: center;
+  padding-bottom: 80px;
+}
+
 .mentors__nav {
   text-align: center;
   margin-top: 60px;
@@ -1177,9 +1186,9 @@ i {
 }
 
 .blog__description {
-  font-size: 27.2px;
   width: 65%;
   margin: 0 auto;
+  font-size: 27.2px;
   text-align: center;
   padding-bottom: 80px;
 }
@@ -1345,6 +1354,14 @@ i {
   border-radius: 3px;
   background-color: #F9EA8F;
   margin: 10px;
+}
+
+.contact__description {
+  width: 65%;
+  margin: 0 auto;
+  font-size: 27.2px;
+  text-align: center;
+  padding-bottom: 80px;
 }
 
 .contact__infos {

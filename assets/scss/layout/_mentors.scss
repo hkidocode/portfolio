@@ -8,6 +8,11 @@
         padding-bottom: $general-spacing * 2.5;
     }
 
+    &__description {
+        @include center(65%);
+        @include desc-style($fs-p, ($general-spacing * 4));
+    }
+
     &__nav {
         text-align: center;
         margin-top: $general-spacing * 3;

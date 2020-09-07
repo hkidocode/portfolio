@@ -44,7 +44,7 @@
 }
 
 
-// titles style
+// title style
 @mixin title-style($txt-algn) {
     font-family: $ff-upper;
     font-size: $base-fs * 3;
@@ -59,6 +59,14 @@
         background-color: $clr-yellow;
         margin: ($general-spacing / 2);
     }
+}
+
+// description style
+@mixin desc-style ($fs, $pd-b) {
+    font-size: $fs;
+    text-align: center;
+    padding-bottom: $pd-b;
+
 }
 
 // inputs styles 
