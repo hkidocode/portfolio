@@ -1164,136 +1164,6 @@ i {
   cursor: auto;
 }
 
-/***************** BLOG SECTION *****************/
-.blog {
-  width: 90%;
-  margin: 0 auto;
-  padding-top: 90px;
-}
-
-.blog__title {
-  font-family: "Edo SZ";
-  font-size: 48px;
-  text-align: left;
-  color: #AFF1DA;
-  padding-bottom: 50px;
-}
-
-.blog__title span {
-  display: inline-block;
-  width: 50px;
-  height: 6px;
-  border-radius: 3px;
-  background-color: #F9EA8F;
-  margin: 10px;
-}
-
-.blog__description {
-  width: 65%;
-  margin: 0 auto;
-  font-size: 27.2px;
-  text-align: center;
-  padding-bottom: 80px;
-}
-
-.blog .blog-wrap {
-  display: flex;
-  justify-content: space-between;
-  width: 85%;
-  margin: 0 auto;
-}
-
-.blog .blog-wrap__item {
-  border: 1px solid #EAEAEA;
-  border-radius: 9px;
-  padding-bottom: 26px;
-  flex-basis: 30%;
-  transition: all .45s ease;
-}
-
-.blog .blog-wrap__item:hover {
-  box-shadow: 0 0 10px rgba(128, 128, 128, 0.3);
-}
-
-.blog .blog-wrap .blog-container {
-  width: 85%;
-  margin: 0 auto;
-}
-
-.blog .blog-wrap .blog-info {
-  display: flex;
-  margin: 6.66667px 0px;
-}
-
-.blog .blog-wrap .blog-info__icon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #AFF1DA;
-}
-
-.blog .blog-wrap .blog-info__date {
-  border-right: 2px solid rgba(0, 0, 0, 0.7);
-  padding-right: 10px;
-  color: #77E6C0;
-}
-
-.blog .blog-wrap .blog-info__type {
-  font-weight: bold;
-}
-
-.blog .blog-wrap .blog-info > * {
-  margin-right: 10px;
-}
-
-.blog .blog-wrap .blog-title {
-  text-transform: uppercase;
-  font-size: 20.8px;
-  margin: 10px 0px;
-}
-
-.blog .blog-wrap .blog-descp {
-  margin-bottom: 20px;
-}
-
-.blog .blog-wrap .read-btn {
-  display: inline-block;
-  width: 110px;
-  height: 30px;
-  font-size: 16px;
-  background-color: #F9EA8F;
-  color: #77E6C0;
-  border-radius: 30px;
-  border: 2px solid #F9EA8F;
-  font-family: "Edo SZ";
-  text-align: center;
-  line-height: 26px;
-  position: relative;
-  overflow: hidden;
-  transition: all .2s ease-in-out;
-}
-
-.blog .blog-wrap .read-btn::before {
-  content: '';
-  width: 100%;
-  height: 20px;
-  background-color: rgba(0, 0, 0, 0.3);
-  position: absolute;
-  top: 0;
-  left: 0;
-  transform: translateX(-100%) rotate(45deg);
-  transition: all .5s ease-in-out;
-}
-
-.blog .blog-wrap .read-btn:hover {
-  background-color: #FFFFFF;
-  border: 2px solid #F9EA8F;
-}
-
-.blog .blog-wrap .read-btn:hover::before {
-  transform: translateX(100%) rotate(45deg);
-}
-
 .projects {
   margin: 90px 0px 100px;
   background-color: #F9EA8F;
@@ -1412,8 +1282,16 @@ i {
   margin-bottom: 20px;
 }
 
-.contact__form .top-form__name {
+.contact__form .top-form .col1 {
   flex-basis: 35%;
+}
+
+.contact__form .top-form .col2 {
+  flex-basis: 63%;
+}
+
+.contact__form .top-form__name {
+  width: 100%;
   outline: none;
   border: 1px solid #635555;
   height: 46px;
@@ -1424,6 +1302,7 @@ i {
   letter-spacing: 1px;
   color: #635555;
   border-radius: 7px;
+  transition: border .3s ease;
 }
 
 .contact__form .top-form__name:focus {
@@ -1431,7 +1310,7 @@ i {
 }
 
 .contact__form .top-form__email {
-  flex-basis: 63%;
+  width: 100%;
   outline: none;
   border: 1px solid #635555;
   height: 46px;
@@ -1442,6 +1321,7 @@ i {
   letter-spacing: 1px;
   color: #635555;
   border-radius: 7px;
+  transition: border .3s ease;
 }
 
 .contact__form .top-form__email:focus {
@@ -1452,9 +1332,7 @@ i {
   margin-bottom: 30px;
 }
 
-.contact__form .bottom-form .message {
-  width: 100%;
-  resize: none;
+.contact__form .bottom-form .message-contact {
   outline: none;
   border: 1px solid #635555;
   height: 200px;
@@ -1465,10 +1343,13 @@ i {
   letter-spacing: 1px;
   color: #635555;
   border-radius: 7px;
+  transition: border .3s ease;
+  width: 100%;
+  resize: none;
   padding-top: 10px;
 }
 
-.contact__form .bottom-form .message:focus {
+.contact__form .bottom-form .message-contact:focus {
   border: 2px solid #F9EA8F;
 }
 
@@ -1491,6 +1372,14 @@ i {
 .contact__form .button:hover {
   background-color: #FFFFFF;
   border: 2px solid #F9EA8F;
+}
+
+.contact .sucess {
+  border: 1.5px solid #2ECC71;
+}
+
+.contact .error {
+  border: 1.5px solid #FF0033;
 }
 
 /***************** FOOTER SECTION *****************/

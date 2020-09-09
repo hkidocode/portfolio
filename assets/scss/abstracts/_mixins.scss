@@ -83,6 +83,7 @@
     letter-spacing: 1px;
     color: $clr-p;
     border-radius: 7px;
+    transition: border .3s ease;
 
     &:focus {
         border: 2px solid $clr-yellow;

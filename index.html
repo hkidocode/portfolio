@@ -415,7 +415,10 @@
         <!--Start contact section-->
         <section id="contact" class="contact">
             <h1 class="contact__title"><span></span>Get in touch<span></span></h1>
-            <p class="contact__description">I'm seeking out opportunities to collaborate with companies / agencies / individuals, not just work for them. I want to bring my web development experience to the table where we can work together to solve real business-problems in a way that optimizes all of our respective experience and knowledge.
+            <p class="contact__description">I'm seeking out opportunities to collaborate with companies / agencies /
+                individuals, not just work for them. I want to bring my web development experience to the table where we
+                can work together to solve real business-problems in a way that optimizes all of our respective
+                experience and knowledge.
             </p>
             <div class="contact__infos">
                 <div class="info" data-aos="flip-right">
@@ -434,12 +437,21 @@
 
             <form action="POST" class="contact__form" data-aos="fade-up" data-aos-delay="900">
                 <div class="top-form">
-                    <input type="text" placeholder="Full name *" name="full-name" class="top-form__name">
-                    <input type="email" placeholder="Email adress *" name="email" class="top-form__email">
+                    <div class="col1">
+                        <input type="text" placeholder="Full name *" name="full-name"
+                            class="top-form__name name-contact">
+                        <small></small>
+                    </div>
+                    <div class="col2">
+                        <input type="text" placeholder="Email adress *" name="email"
+                            class="top-form__email email-contact">
+                        <small></small>
+                    </div>
                 </div>
                 <div class="bottom-form">
                     <textarea name="message" placeholder="Your message here *" cols="30" rows="10"
-                        class="message"></textarea>
+                        class="message-contact"></textarea>
+                    <small></small>
                 </div>
                 <button class="button" type="submit">Send message</button>
             </form>
@@ -477,6 +489,8 @@
     <script src="assets/js/filter.js"></script>
     <script src="assets/js/carasoul.js"></script>
     <script src="assets/js/counter.js"></script>
+
+    <script src="assets/js/form.js"></script>
     <!-- AOS JS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- AOS initialize -->
