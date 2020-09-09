@@ -63,7 +63,6 @@ function isSetMessage(input) {
 function setSuccessFor(input) {
     input.nextElementSibling.textContent = '';
     input.style.border = '1.5px solid #2ECC71';
-    console.log("success");
 }
 
 // Add styles to input if not exist and not match the existing regular expression 
@@ -72,9 +71,8 @@ function setErrorFor(input, message) {
     smallMessage.textContent = message;
     input.style.border = '1.5px solid #FF0033';
     smallMessage.style.color = '#FF0033';
-    smallMessage.style.margin = '8px 8px 0px'
+    smallMessage.style.padding = '8px 8px 0px';
     smallMessage.style.fontSize = '16px';
-    console.log("error");
 }
 
 // function insertDataToDB() {

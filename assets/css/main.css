@@ -1374,14 +1374,6 @@ i {
   border: 2px solid #F9EA8F;
 }
 
-.contact .sucess {
-  border: 1.5px solid #2ECC71;
-}
-
-.contact .error {
-  border: 1.5px solid #FF0033;
-}
-
 /***************** FOOTER SECTION *****************/
 .footer-container {
   width: 100%;
