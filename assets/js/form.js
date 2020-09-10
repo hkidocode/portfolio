@@ -3,7 +3,6 @@ const contactForm = document.querySelector('.contact__form');
 const nameContact = document.querySelector('.name-contact');
 const emailContact = document.querySelector('.email-contact');
 const messageContact = document.querySelector('.message-contact');
-const model = contactForm.querySelector('.modal');
 // select thanks message modal
 const thanksMsg = document.querySelector('#msg');
 
@@ -67,9 +66,9 @@ function isValidUserInputs(input1, input2, input3) {
     const email = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     if (name.test(input1.value) && email.test(input2.value) && input3.value !== '') {
         thanksMsg.style.display = 'block';
-        input1.value = '';
-        input2.value = '';
-        input3.value = '';
+        // input1.value = '';
+        // input2.value = '';
+        // input3.value = '';
     }
 }
 
@@ -90,14 +89,6 @@ function setErrorFor(input, message) {
     smallMessage.style.fontSize = '16px';
 }
 
-// Enable contact button when all inputs aren't empty
-// if ((nameContact.value.length > 0) && (emailContact.value.length > 0) && (messageContact.value.length > 0)) {
-//     buttonContact.removeAttribute("disabled");
-//     buttonContact.style.cursor = 'pointer';
-//     buttonContact.style.opacity = '1';
-// } else {
-//     buttonContact.getAttribute("disabled", true);
-// }
 
 // function insertDataToDB() {
 //     let xhr = new XMLHttpRequest();
@@ -114,10 +105,11 @@ function setErrorFor(input, message) {
 
 
 contactForm.addEventListener('submit', (event) => {
+    event.preventDefault();
     isValidFullName(nameContact);
     isValidEmail(emailContact);
     isSetMessage(messageContact);
-    isValidUserInputs(nameContact, emailContact, messageContact);
+    setTimeout(isValidUserInputs(nameContact, emailContact, messageContact), 6000);
 });
 
 

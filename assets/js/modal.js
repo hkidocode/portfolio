@@ -3,7 +3,6 @@
 const quickView = document.querySelector('.btn-wrap__view');
 const modals = document.querySelectorAll('.modal');
 const closeView = document.querySelector('#about-view');
-const closeMessage = document.querySelector('#contact-msg');
 
 
 const showModal = () => {

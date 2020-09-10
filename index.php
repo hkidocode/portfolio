@@ -435,7 +435,7 @@
                 </div>
             </div>
 
-            <form action="POST" class="contact__form" data-aos="fade-up" data-aos-delay="900">
+            <form  method="post" action="contact.php" class="contact__form" id="form" data-aos="fade-up" data-aos-delay="900">
                 <div class="top-form">
                     <div class="col1">
                         <input type="text" placeholder="Full name *" name="full-name"
@@ -455,15 +455,6 @@
                 </div>
                 <button class="button" type="submit">Send message</button>
             </form>
-            <div class="modal" id="msg">
-                <div class="modal-content">
-                    <i class="fas fa-times" id="contact-msg"></i>
-                    <div class="clearfix"></div>
-                    <img src="assets/img/thanks.png" alt="thank-you">
-                    <p>We have received your message and would like to thank you for writing to us. If your inquiry is urgent, please use the telephone number listed above of contact form to talk to one of our staff members. Otherwise, we will reply by email as soon as possible.</p>
-                    <h4>Mustapha Kadouri</h4>
-                </div>
-            </div>
         </section>
         <!--End contact section-->
 

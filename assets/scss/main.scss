@@ -1,4 +1,64 @@
+// HOME PAGE
 @import 'abstracts/colors', 'abstracts/typography', 'abstracts/helpers', 'abstracts/mixins', 'abstracts/functions', 'abstracts/general';
 
 
 @import 'layout/navbar', 'layout/banner', 'layout/about', 'layout/services', 'layout/work', 'layout/mentors', 'layout/projects', 'layout/contact', 'layout/footer';
+
+
+// CONTACT PAGE
+.thanks {
+    @include center(85%);
+    height: 100vh;
+    padding: $general-spacing * 3;
+}
+
+.thanks-content {
+    text-align: center;
+    &__img {
+        margin-bottom: $general-spacing * 3;
+    }
+
+    &__heading {
+        font-family: $ff-upper;
+        font-size: $base-fs * 2.5;
+        color: $clr-green-dark;
+        margin-bottom: $general-spacing * 1.5;
+    }
+
+    &__description {
+        @include center(70%);
+        font-size: $base-fs * 1.5;
+        margin-bottom: $general-spacing * 1.5;
+
+    }
+
+    &__home {
+        @include btn-style(160px, 50px);
+        margin-right: 60px;
+        position: relative;
+        overflow: hidden;
+        transition: all .2s ease-in-out;
+    }
+
+    &__home::before {
+        content: '';
+        width: 100%;
+        height: 20px; 
+        background-color: rgba($color: #000000, $alpha: .3);
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translateX(-100%) rotate(45deg);
+        transition: all .5s ease-in-out;
+
+    }
+
+    &__home:hover {
+        background-color: $clr-white;
+        border: 2px solid $clr-yellow;
+    }
+
+    &__home:hover::before {
+        transform: translateX(100%) rotate(45deg);
+    }   
+}
