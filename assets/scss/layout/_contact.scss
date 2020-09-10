@@ -89,16 +89,48 @@
           @include btn-style(100%, 50px);
           margin-bottom: $general-spacing * 6;
           outline: none;
+        
         }
 
     
 
         .button:hover {
+            cursor: pointer;
             background-color: $clr-white;
             border: 2px solid $clr-yellow;
       }  
 
       
     }
+
+    .modal-content {
+      width: 55%;
+      text-align: center;
+
+      img {
+        width: 180px;
+        height: 180px;
+        margin-bottom: $general-spacing * 1.5;
+      }
+
+      p {
+        font-size: $base-fs * 1.3;
+        font-weight: 600;
+        margin-bottom: $general-spacing;
+        text-align: left;
+        padding: 0px $general-spacing 0px;
+      }
+
+      h4 {
+        font-family: $ff-upper;
+        color: $clr-green-dark;
+        letter-spacing: 2px;
+      }
+      
+
+    }
+
+
+    
 
 }

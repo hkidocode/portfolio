@@ -103,6 +103,7 @@
         &__view:hover {
             background-color: $clr-yellow;
             border: none;
+            cursor: pointer;
         }
 
         &__view:hover::before {

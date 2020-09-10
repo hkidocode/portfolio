@@ -1,8 +1,11 @@
-// Select all input field in the website
+// Select all input field in contact form
 const contactForm = document.querySelector('.contact__form');
 const nameContact = document.querySelector('.name-contact');
 const emailContact = document.querySelector('.email-contact');
 const messageContact = document.querySelector('.message-contact');
+const model = contactForm.querySelector('.modal');
+// select thanks message modal
+const thanksMsg = document.querySelector('#msg');
 
 
 
@@ -51,18 +54,30 @@ function isValidEmail(email) {
 
 // check if the user is write a message or no
 function isSetMessage(input) {
-    if(input.value !== '') {
+    if (input.value !== '') {
         setSuccessFor(input);
     } else {
         setErrorFor(input, "Enter a message");
     }
 }
 
+// check all inputs if are correct and show a thank you message
+function isValidUserInputs(input1, input2, input3) {
+    const name = /^[a-zA-Z ]+$/;
+    const email = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    if (name.test(input1.value) && email.test(input2.value) && input3.value !== '') {
+        thanksMsg.style.display = 'block';
+        input1.value = '';
+        input2.value = '';
+        input3.value = '';
+    }
+}
 
-// Add border color to input if exist and match the existing regular expression 
+
+// remove border if match the existing regular expression 
 function setSuccessFor(input) {
     input.nextElementSibling.textContent = '';
-    input.style.border = '1.5px solid #2ECC71';
+    input.style.border = '1px solid #635555';
 }
 
 // Add styles to input if not exist and not match the existing regular expression 
@@ -71,9 +86,18 @@ function setErrorFor(input, message) {
     smallMessage.textContent = message;
     input.style.border = '1.5px solid #FF0033';
     smallMessage.style.color = '#FF0033';
-    smallMessage.style.padding = '8px 8px 0px';
+    smallMessage.style.padding = '10px 8px 0px';
     smallMessage.style.fontSize = '16px';
 }
+
+// Enable contact button when all inputs aren't empty
+// if ((nameContact.value.length > 0) && (emailContact.value.length > 0) && (messageContact.value.length > 0)) {
+//     buttonContact.removeAttribute("disabled");
+//     buttonContact.style.cursor = 'pointer';
+//     buttonContact.style.opacity = '1';
+// } else {
+//     buttonContact.getAttribute("disabled", true);
+// }
 
 // function insertDataToDB() {
 //     let xhr = new XMLHttpRequest();
@@ -88,14 +112,13 @@ function setErrorFor(input, message) {
 // }
 
 
-contactForm.addEventListener('submit', (e) => {
-    e.preventDefault();
-    // matchPassword(password, confirmPassword);
+
+contactForm.addEventListener('submit', (event) => {
     isValidFullName(nameContact);
     isValidEmail(emailContact);
     isSetMessage(messageContact);
-    // isValidPassword(password);
-    // insertDataToDB();
-
-
+    isValidUserInputs(nameContact, emailContact, messageContact);
 });
+
+
+

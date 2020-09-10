@@ -376,6 +376,7 @@ i {
 .about .btn-wrap__view:hover {
   background-color: #F9EA8F;
   border: none;
+  cursor: pointer;
 }
 
 .about .btn-wrap__view:hover::before {
@@ -390,7 +391,7 @@ i {
   width: 100%;
   height: 100%;
   z-index: 999;
-  background-color: rgba(128, 128, 128, 0.8);
+  background-color: rgba(128, 128, 128, 0.7);
 }
 
 .modal .modal-content {
@@ -403,25 +404,29 @@ i {
   padding-top: 20px;
   background-color: #FFFFFF;
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.35);
-  -webkit-animation: modal .3s ease-in;
-          animation: modal .3s ease-in;
+  -webkit-animation: modal .43s ease-in;
+          animation: modal .43s ease-in;
 }
 
 @-webkit-keyframes modal {
   from {
     opacity: 0;
+    transform: scale(0.3);
   }
   to {
     opacity: 1;
+    transform: scale(1);
   }
 }
 
 @keyframes modal {
   from {
     opacity: 0;
+    transform: scale(0.3);
   }
   to {
     opacity: 1;
+    transform: scale(1);
   }
 }
 
@@ -435,6 +440,7 @@ i {
 .modal .modal-content i {
   float: right;
   font-size: 24px;
+  cursor: pointer;
 }
 
 .modal .modal-content .clearfix {
@@ -1370,8 +1376,34 @@ i {
 }
 
 .contact__form .button:hover {
+  cursor: pointer;
   background-color: #FFFFFF;
   border: 2px solid #F9EA8F;
+}
+
+.contact .modal-content {
+  width: 55%;
+  text-align: center;
+}
+
+.contact .modal-content img {
+  width: 180px;
+  height: 180px;
+  margin-bottom: 30px;
+}
+
+.contact .modal-content p {
+  font-size: 20.8px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  text-align: left;
+  padding: 0px 20px 0px;
+}
+
+.contact .modal-content h4 {
+  font-family: "Edo SZ";
+  color: #77E6C0;
+  letter-spacing: 2px;
 }
 
 /***************** FOOTER SECTION *****************/
