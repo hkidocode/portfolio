@@ -90,6 +90,15 @@ function setErrorFor(input, message) {
     smallMessage.style.fontSize = '16px';
 }
 
+// Enable contact button when all inputs aren't empty
+// if ((nameContact.value.length > 0) && (emailContact.value.length > 0) && (messageContact.value.length > 0)) {
+//     buttonContact.removeAttribute("disabled");
+//     buttonContact.style.cursor = 'pointer';
+//     buttonContact.style.opacity = '1';
+// } else {
+//     buttonContact.getAttribute("disabled", true);
+// }
+
 // function insertDataToDB() {
 //     let xhr = new XMLHttpRequest();
 //     xhr.open("POST", "inc/connection.php", true);
