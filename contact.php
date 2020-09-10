@@ -26,30 +26,55 @@
     </div>
 </div>
 <?php 
-  
-    // Recipient
-    $to = 'mus.kadouri12@gmail.com';
+    // SET UP PHPMAILER
+    use PHPMailer\PHPMailer\PHPMailer;
+    use PHPMailer\PHPMailer\SMTP;
+    use PHPMailer\PHPMailer\Exception;
 
-    // Subject
-    $subject = 'Contact Form Porfolio';
+    require_once 'phpmailer/vendor/autoload.php';
 
-    // Message
-    $message = !empty($_POST['message']) ? $_POST['message'] : NULL;
+    // Create new PHPMailer object
+    $mail = new PHPMailer(true);
 
-    // Email
+    //Server settings
+    $mail->isSMTP();
+    $mail->SMTPAuth = true;
+    $mail->Host = 'smtp.gmail.com';
+    $mail->Username = 'mus.kadouri@gmail.com';
+    $mail->Password = 'ahlan@gmail.com';
+    $mail->Port = 587; // 465
+    $mail->SMTPSecure = 'tls'; // or we can use ssl
+    
+    // name
+    $name = !empty($_POST['full-name']) ? $_POST['full-name'] : NULL;
+    // email
     $email = !empty($_POST['email']) ? $_POST['email'] : NULL;
+    // message
+    $message = !empty($_POST['message']) ? $_POST['message'] : NULL;
+    // receiver
+    $receiver = $mail->Username;
 
-    // Headers
-    $headers = "From: $email\r\n";
-    $headers .= "Reply-To: $to\r\n";
-    $headers .= "Content-type: text/html\r\n";
-    $headers .= 'X-Mailer: PHP/' . phpversion();
+    //Recipients
+    $mail->setFrom($email, $name);
+    $mail->addReplyTo($email, 'Porfolio');
+    $mail->addAddress($receiver, 'Mustapha Kadouri');
 
-    // Send email
-    var_dump($_POST);
+    // Content
+    $mail->isHTML(true);
+    $mail->Subject = 'Contact Porfolio';
+    $mail->Body = "<pre><strong>$message</strong></pre>";
+
+    // $mail->SMTPOptions = array(
+    //     'ssl' => array(
+    //         'verify_peer' => false,
+    //         'verify_peer_name' => false,
+    //         'allow_self_signed' => true,
+    //     )
+    // );
+
+    $mail->send();
 
 ?>
-
 </body>
 
 </html>

@@ -425,17 +425,17 @@
                     <i class="fas fa-mobile info__icon"></i>
                     <p class="info__content">+2126-99-66-08-28</p>
                 </div>
-                <div class="info" data-aos="flip-right" data-aos-delay="400">
+                <div class="info" data-aos="flip-right" data-aos-delay="300">
                     <i class="fas fa-envelope-open info__icon"></i>
                     <p class="info__content">mus.kadouri@gmail.com</p>
                 </div>
-                <div class="info" data-aos="flip-right" data-aos-delay="600">
+                <div class="info" data-aos="flip-right" data-aos-delay="400">
                     <i class="fab fa-skype info__icon"></i>
                     <p class="info__content">mostapha-kadouri</p>
                 </div>
             </div>
 
-            <form  method="post" action="contact.php" class="contact__form" id="form" data-aos="fade-up" data-aos-delay="900">
+            <form role="form" method="post" action="contact.php" class="contact__form" data-aos="fade-up" data-aos-delay="600">
                 <div class="top-form">
                     <div class="col1">
                         <input type="text" placeholder="Full name *" name="full-name"

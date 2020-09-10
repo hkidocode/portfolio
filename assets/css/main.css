@@ -1464,7 +1464,7 @@ i {
   width: 85%;
   margin: 0 auto;
   height: 100vh;
-  padding: 60px;
+  padding: 80px 0px;
 }
 
 .thanks-content {
@@ -1483,7 +1483,7 @@ i {
 }
 
 .thanks-content__description {
-  width: 70%;
+  width: 75%;
   margin: 0 auto;
   font-size: 24px;
   margin-bottom: 30px;
@@ -1501,7 +1501,6 @@ i {
   font-family: "Edo SZ";
   text-align: center;
   line-height: 50px;
-  margin-right: 60px;
   position: relative;
   overflow: hidden;
   transition: all .2s ease-in-out;

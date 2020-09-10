@@ -9,7 +9,7 @@
 .thanks {
     @include center(85%);
     height: 100vh;
-    padding: $general-spacing * 3;
+    padding: ($general-spacing * 4) 0px;
 }
 
 .thanks-content {
@@ -26,7 +26,7 @@
     }
 
     &__description {
-        @include center(70%);
+        @include center(75%);
         font-size: $base-fs * 1.5;
         margin-bottom: $general-spacing * 1.5;
 
@@ -34,7 +34,6 @@
 
     &__home {
         @include btn-style(160px, 50px);
-        margin-right: 60px;
         position: relative;
         overflow: hidden;
         transition: all .2s ease-in-out;

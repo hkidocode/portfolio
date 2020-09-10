@@ -105,11 +105,27 @@ function setErrorFor(input, message) {
 
 
 contactForm.addEventListener('submit', (event) => {
-    event.preventDefault();
-    isValidFullName(nameContact);
-    isValidEmail(emailContact);
-    isSetMessage(messageContact);
-    setTimeout(isValidUserInputs(nameContact, emailContact, messageContact), 6000);
+
+    let isOrAreNotValid = ((nameContact.value.length === 0) ||
+                        (emailContact.value.length === 0) ||
+                        (messageContact.value.length === 0)) ||
+                         (((nameContact.value.length === 0) &&
+                         (emailContact.value.length === 0) &&
+                         (messageContact.value.length === 0)))
+
+
+
+    if (isOrAreNotValid) {
+        event.preventDefault();
+        isValidFullName(nameContact);
+        isValidEmail(emailContact);
+        isSetMessage(messageContact);
+    } else {
+        isValidFullName(nameContact);
+        isValidEmail(emailContact);
+        isSetMessage(messageContact);
+        isValidUserInputs(nameContact, emailContact, messageContact);
+    }
 });
 
 
