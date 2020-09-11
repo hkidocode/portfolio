@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mustapha Kadouri</title>
+    <title>Mustapha Kadouri | Submission Success</title>
     <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
     <!-- Main style -->
     <link rel="stylesheet" href="assets/css/main.css">

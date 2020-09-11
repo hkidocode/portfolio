@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mustapha Kadouri</title>
+    <title>Thanks Page</title>
     <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
     <!-- Main style -->
     <link rel="stylesheet" href="assets/css/main.css">
@@ -62,15 +62,7 @@
     // Content
     $mail->isHTML(true);
     $mail->Subject = 'Contact Porfolio';
-    $mail->Body = "<pre><strong>$message</strong></pre>";
-
-    // $mail->SMTPOptions = array(
-    //     'ssl' => array(
-    //         'verify_peer' => false,
-    //         'verify_peer_name' => false,
-    //         'allow_self_signed' => true,
-    //     )
-    // );
+    $mail->Body = "<pre><h3>$message</h3></pre>";
 
     $mail->send();
 
