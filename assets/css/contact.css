@@ -45,19 +45,18 @@ i {
 }
 
 .thanks {
-  width: 80%;
+  width: 85%;
   margin: 0 auto;
   height: 85vh;
   padding: 7.5vh 0vh;
 }
 
 .thanks-content {
-  height: 100%;
   text-align: center;
 }
 
 .thanks-content__img {
-  margin-bottom: 50px;
+  margin-bottom: 60px;
 }
 
 .thanks-content__heading {
@@ -68,7 +67,7 @@ i {
 }
 
 .thanks-content__description {
-  width: 68%;
+  width: 75%;
   margin: 0 auto;
   font-size: 24px;
   margin-bottom: 30px;
@@ -88,8 +87,6 @@ i {
   font-family: "Edo SZ";
   text-align: center;
   position: relative;
-  left: 50%;
-  transform: translateX(-50%);
   overflow: hidden;
   transition: all .2s ease-in-out;
 }

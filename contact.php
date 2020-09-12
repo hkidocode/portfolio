@@ -25,7 +25,6 @@
         <a href="index.php" class="thanks-content__home">Go Home</a>
     </div>
 </div>
-
 <?php 
     // SET UP PHPMAILER
     use PHPMailer\PHPMailer\PHPMailer;
