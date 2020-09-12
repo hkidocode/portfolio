@@ -481,9 +481,15 @@
     </section>
     <!--End footer section-->
 
-    <!--ANIMATIONS JS-->
+    <!-- Base JS -->
     <script src="assets/js/main.js"></script>
-    <!--CONTACT FORM-->
+
+    <!--Animation vanilla js-->
+    <script src="assets/js/modal.js"></script>
+    <script src="assets/js/filter.js"></script>
+    <script src="assets/js/carasoul.js"></script>
+    <script src="assets/js/counter.js"></script>
+
     <script type="module" src="assets/js/form.js"></script>
     <!-- AOS JS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>

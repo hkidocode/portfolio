@@ -1,7 +1,3 @@
-/* =======================================================================
-+++++++++++++++++++++++++  VALIDATE FUNCTIONS  +++++++++++++++++++++++++++
-======================================================================= */
-
 export {isValidName, isValidEmail, isValidPassword, isSetMessage};
 
 // Check full name if contains letters in a-z in lowercase
