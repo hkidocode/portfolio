@@ -3,10 +3,6 @@ const contactForm = document.querySelector('.contact__form');
 const nameContact = document.querySelector('.name-contact');
 const emailContact = document.querySelector('.email-contact');
 const messageContact = document.querySelector('.message-contact');
-// select thanks message modal
-const thanksMsg = document.querySelector('#msg');
-
-
 
 // Check full name if contains letters in a-z in lowercase
 function isValidFullName(fullName) {
@@ -28,17 +24,17 @@ function isValidEmail(email) {
     }
 }
 
-// // Check password 
-// function isValidPassword(password) {
-//     const regex = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,30}$/;
-//     if (regex.test(password.value)) {
-//         setSuccessFor(password);
-//     } else {
-//         setErrorFor(password,
-//             "Enter 6 to 20 characters which contain at least one numeric digit, one uppercase and one lowercase letter",
-//             2);
-//     }
-// }
+// Check password 
+function isValidPassword(password) {
+    const regex = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,30}$/;
+    if (regex.test(password.value)) {
+        setSuccessFor(password);
+    } else {
+        setErrorFor(password,
+            "Enter 6 to 20 characters which contain at least one numeric digit, one uppercase and one lowercase letter",
+            2);
+    }
+}
 
 // // check if the passwords are matched
 // function matchPassword(password, confirmPassword) {
@@ -59,19 +55,6 @@ function isSetMessage(input) {
         setErrorFor(input, "Enter a message");
     }
 }
-
-// check all inputs if are correct and show a thank you message
-function isValidUserInputs(input1, input2, input3) {
-    const name = /^[a-zA-Z ]+$/;
-    const email = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-    if (name.test(input1.value) && email.test(input2.value) && input3.value !== '') {
-        thanksMsg.style.display = 'block';
-        // input1.value = '';
-        // input2.value = '';
-        // input3.value = '';
-    }
-}
-
 
 // remove border if match the existing regular expression 
 function setSuccessFor(input) {
@@ -124,9 +107,27 @@ contactForm.addEventListener('submit', (event) => {
         isValidFullName(nameContact);
         isValidEmail(emailContact);
         isSetMessage(messageContact);
-        isValidUserInputs(nameContact, emailContact, messageContact);
     }
 });
+
+
+/* ================================================================================== */
+
+// select the container of signin and signup forms
+const container = document.getElementById('container');
+// select signin and signup overlay buttons
+const signUpOverlay = document.getElementById('signup-overlay');
+const signInOverlay = document.getElementById('signin-overlay');
+
+signUpOverlay.addEventListener('click', () => {
+	container.classList.add("right-panel-active");
+});
+
+signInOverlay.addEventListener('click', () => {
+	container.classList.remove("right-panel-active");
+});
+
+
 
 
 

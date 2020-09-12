@@ -3,15 +3,16 @@
 
 
 .thanks {
-    @include center(85%);
+    @include center(80%);
     height: 85vh;
     padding: 7.5vh 0vh;
 }
 
 .thanks-content {
+    height: 100%;
     text-align: center;
     &__img {
-        margin-bottom: $general-spacing * 3;
+        margin-bottom: $general-spacing * 2.5;
     }
 
     &__heading {
@@ -22,7 +23,7 @@
     }
 
     &__description {
-        @include center(75%);
+        @include center(68%);
         font-size: $base-fs * 1.5;
         margin-bottom: $general-spacing * 1.5;
 
@@ -31,6 +32,8 @@
     &__home {
         @include btn-style(160px, 50px);
         position: relative;
+        left: 50%;
+        transform: translateX(-50%);
         overflow: hidden;
         transition: all .2s ease-in-out;
     }
