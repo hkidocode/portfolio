@@ -23,7 +23,7 @@
         <!--Start navbar-->
         <nav class="navbar">
             <d iv class="container">
-                <a href="index.html" class="logo">
+                <a href="index.php" class="logo">
                     <img src="assets/img/logo-nav.png" alt="logo">
                 </a>
                 <ul class="nav">
@@ -31,8 +31,8 @@
                     <li class="nav__item"><a href="#about">About</a></li>
                     <li class="nav__item"><a href="#services">Services</a></li>
                     <li class="nav__item"><a href="#work">Work</a></li>
-                    <li class="nav__item"><a href="#blog">Blog</a></li>
                     <li class="nav__item"><a href="#contact">Contact</a></li>
+                    <li class="nav__item"><a href="register.php" class="action">Sign Up</a></li>
                 </ul>
                 <div class="options">
                     <i class="fas fa-moon options__dark"></i>

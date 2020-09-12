@@ -93,9 +93,8 @@ dotsNav.addEventListener('click', (event) => {
     updateDots(currentDot, targetDot);
     showHideArrow(slides, prevButton, nextButton, targetIndex);
 
-
-
 });
+
 
 
 

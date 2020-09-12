@@ -22,9 +22,8 @@
                  $color: $clr-green-dark,
                  $f-family: $ff-upper,
                  $fs: ($base-fs * 1.5),
-                 $ln-h: 50px,
                  $border: none) {
-                        display: inline-block;
+                        @include flexy(center, center);
                         width: $w;
                         height: $h;
                         font-size: $fs;
@@ -34,8 +33,8 @@
                         border: $border;
                         font-family: $f-family;
                         text-align: center;
-                        line-height: $ln-h; 
-}
+                         
+                }
 
 
 
@@ -72,10 +71,11 @@
 }
 
 // inputs styles 
-@mixin  input-style($h) {
+@mixin  input-style($h, $bg-clr: $clr-white) {
     outline: none;
     border: 1px solid $clr-p;
     height: $h;
+    background-color: $bg-clr;
     padding: 0 $general-spacing;
     font-size: $base-fs * 1.2;
     font-family: $ff-normal;
@@ -83,7 +83,7 @@
     letter-spacing: 1px;
     color: $clr-p;
     border-radius: 7px;
-    transition: border .3s ease;
+    transition: border .2s ease;
 
     &:focus {
         border: 2px solid $clr-yellow;

@@ -1,0 +1,42 @@
+/***************** FONT FAMILY *****************/
+@font-face {
+  font-family: "Edo SZ";
+  src: url(../../fonts/edosz.ttf);
+}
+
+/***************** RESET ELEMENTS *****************/
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/***************** BASIC STYLE *****************/
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Abel", sans-serif;
+  color: #635555;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  text-align: center;
+}
+
+i {
+  display: inline-block;
+}

@@ -82,7 +82,7 @@
 
             &__link {
                 display: inline-block;
-                @include btn-style(140px, 30px, $bg-color: $clr-yellow, $fs: $base-fs, $border: 2px solid $clr-yellow, $ln-h: 26px);
+                @include btn-style(140px, 30px, $bg-color: $clr-yellow, $fs: $base-fs, $border: 2px solid $clr-yellow);
                 margin: 0 auto;
                 transition: all .2s ease-in-out;
             }

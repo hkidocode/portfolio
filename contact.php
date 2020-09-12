@@ -7,7 +7,7 @@
     <title>Thanks Page</title>
     <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
     <!-- Main style -->
-    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/contact.css">
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/65e7219626.js" crossorigin="anonymous"></script>
     <!-- AOS CSS -->

@@ -7,7 +7,6 @@
 
 /***************** RESET ELEMENTS *****************/
 
-
 *,
 *::before,
 *::after {
@@ -23,6 +22,9 @@ html {
 }
 
 body {
+    max-width: 1320px;
+    min-width: 375px;
+    background-color: $bg-body;
     font-family: $ff-normal;
     color: $clr-p;
     overflow-x: hidden;

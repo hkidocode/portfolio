@@ -3,8 +3,6 @@
 .about {
     @include center();
     padding-top: ($general-spacing * 4.5);
-    scroll-behavior: smooth;
-
 
     &__title {
         @include title-style(center);
@@ -49,10 +47,11 @@
 
     .btn-wrap {
         margin-left: 16px;
+        @include flexy();
 
         &__download {
             @include btn-style(200px, 50px);
-            margin-right: 60px;
+            margin-right: $general-spacing * 3;
             position: relative;
             overflow: hidden;
             transition: all .2s ease-in-out;

@@ -4,7 +4,6 @@
     width: 100%;
 }
 
-
 .navbar {
     width: 100%;
     padding: 15px 0px;
@@ -38,7 +37,9 @@
     flex: .7;
 
     &__item {
+        cursor: pointer;
         @include flexy(center, center);
+
     }
 
     &__item a {
@@ -47,15 +48,25 @@
         transition: all .2s ease-out;
     }
 
+    .action {
+        @include btn-style(120px, 40px, $bg-color: $clr-blue, $color: $clr-white, $fs: ($base-fs * 1.6), $f-family: $ff-normal);
+        font-weight: 800;
+    }
+    
+    .action:hover {
+        background-color: $clr-white;
+        border: 2px solid $clr-yellow;
+    }
 
     &__item a:hover  {
-        color: $clr-green;
+        color: $clr-green-dark;
         border-bottom: 3px solid $clr-yellow;
         
     }
 
+
     .active {
-        color: $clr-green;
+        color: $clr-green-dark;
         border-bottom: 3px solid $clr-yellow;
     }
 
