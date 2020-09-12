@@ -1,3 +1,7 @@
+/* =======================================================================
++++++++++++++++++++++++++  CARASOUL  +++++++++++++++++++++++++++++++++++++
+======================================================================= */
+
 // select all elements we need to control the carasoul
 const track = document.querySelector('.carasoul__track');
 const slides = Array.from(track.children);
@@ -94,7 +98,3 @@ dotsNav.addEventListener('click', (event) => {
     showHideArrow(slides, prevButton, nextButton, targetIndex);
 
 });
-
-
-
-
