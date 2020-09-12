@@ -490,7 +490,7 @@
     <script src="assets/js/carasoul.js"></script>
     <script src="assets/js/counter.js"></script>
 
-    <script src="assets/js/form.js"></script>
+    <script type="module" src="assets/js/form.js"></script>
     <!-- AOS JS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- AOS initialize -->
