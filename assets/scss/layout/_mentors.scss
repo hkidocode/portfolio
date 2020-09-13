@@ -10,7 +10,7 @@
 
     &__description {
         @include center(65%);
-        @include desc-style($fs-p, ($general-spacing * 4));
+        @include desc-style(($base-fs * 1.7), ($general-spacing * 4));
     }
 
     &__nav {
@@ -40,5 +40,16 @@
     }
 }
 
+@include mq(1100px) {
+    .mentors {
+        &__description {
+            width: 90%;
+            @include desc-style(($base-fs * 1.6), ($general-spacing * 3.5));
+        }
+    }
+}
+
 @import '../components/carasoul';
+
+
 

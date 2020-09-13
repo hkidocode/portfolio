@@ -54,11 +54,12 @@
     }
     
     .action:hover {
+        color: $clr-green-dark;
         background-color: $clr-white;
         border: 2px solid $clr-yellow;
     }
 
-    &__item a:hover  {
+    &__item a:hover:not(.action) {
         color: $clr-green-dark;
         border-bottom: 3px solid $clr-yellow;
         

@@ -22,13 +22,14 @@ const messageContact = document.querySelector('.message-contact');
 
 contactForm.addEventListener('submit', (event) => {
 
-    let isOrAreNotValid = ((nameContact.value.length === 0) ||
-                        (emailContact.value.length === 0) ||
-                        (messageContact.value.length === 0)) ||
-                         (((nameContact.value.length === 0) &&
-                         (emailContact.value.length === 0) &&
-                         (messageContact.value.length === 0)))
-
+    let isOrAreNotValid = (
+        (nameContact.value.length === 0) || (emailContact.value.length === 0) ||
+        (messageContact.value.length === 0)
+    )
+        || (
+            ((nameContact.value.length === 0) && (emailContact.value.length === 0) &&
+                (messageContact.value.length === 0))
+        );
 
 
     if (isOrAreNotValid) {

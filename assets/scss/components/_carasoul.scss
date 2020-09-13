@@ -20,7 +20,6 @@
         
 
         .mentor {
-            min-width: 100%;
             background-color: $clr-green;
             padding: 0px ($general-spacing * 1.5);
             position: absolute;
@@ -100,7 +99,12 @@
         cursor: auto;
     }
 
-    
+}
 
+@include mq(1100px) {
+    .carasoul {
+        .mentor {
 
+        }
+    }
 }

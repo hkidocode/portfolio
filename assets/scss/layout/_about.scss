@@ -15,12 +15,12 @@
     &__avatar {
         flex: 1;
         position: relative;
-
     }
 
     &__avatar img {
-        min-width: 357.5px;
+        min-width: 357px;
         min-height: 533px;
+        filter: saturate(1.2);
     }
 
     .border {
@@ -41,7 +41,7 @@
 
     &__description p {
         margin-bottom: ($general-spacing * 3.7);
-        font-size: $fs-p;
+        font-size: $base-fs * 1.7;
         line-height: 1.4;
     }
 
@@ -108,6 +108,96 @@
         &__view:hover::before {
             transform: translateX(100%) rotate(45deg);
         } 
+    }
+}
+
+@include mq(1208px) {
+    .about {
+
+        &__avatar img {
+            min-width: 317px;
+            min-height: 493px;
+        }
+    
+        .border {
+            min-width: 282px;
+            min-height: 390px;
+            
+        }
+
+        &__description p {
+            margin-bottom: $general-spacing * 2.5;
+        }
+    }
+}
+
+@include mq(1085px) {
+    .about {
+
+        &__avatar img {
+            min-width: 282px;
+            min-height: 458px;
+        }
+    
+        .border {
+            min-width: 247px;
+            min-height: 355px;
+            
+        }
+
+        &__description {
+            margin-left: $general-spacing * 2;
+            margin-top: $general-spacing * 3;
+        }
+
+        &__description p {
+            margin-bottom: $general-spacing * 1.5;
+            font-size: $base-fs * 1.6;
+
+        }
+    }
+}
+
+
+@include mq(963px) {
+    .about {
+
+        &__description p {
+            margin-bottom: $general-spacing * 1.5;
+            font-size: $base-fs * 1.5;
+
+        }
+    }
+}
+
+@include mq(833px) {
+    .about {
+
+        &__title {
+            padding-bottom: $general-spacing * 2.5;
+        }
+
+        .columns {
+            @include flexy($dir: column);
+        }
+
+        &__avatar {
+            @include flexy(center, center); 
+        }
+
+        &__avatar img {
+            width: 317px;
+            height: 493px;
+        }
+
+        .border {
+            display: none;
+            
+        }
+
+        &__description p {
+            margin-bottom: $general-spacing * 2.5;
+        }
     }
 }
 

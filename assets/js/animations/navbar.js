@@ -7,7 +7,7 @@ window.addEventListener('scroll', () => {
 
 // select navbar items
 const navbarItems = Array.from(document.querySelectorAll('.nav__item a'));
-// change the color of navbar items when is clicked
+// change the color of navbar links when is clicked
 navbarItems.forEach(item => {
     item.addEventListener('click', function () {
         navbar.querySelector('.active').classList.remove('active');

@@ -9,7 +9,7 @@
 
     &__description {
       @include center(65%);
-      @include desc-style($fs-p, ($general-spacing * 4));
+      @include desc-style(($base-fs * 1.7), ($general-spacing * 4));
     }
 
     &__infos {

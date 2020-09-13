@@ -4,7 +4,7 @@
 
     .counter {
         @include center();
-        @include flexy(space-between);
+        @include flexy(space-between, $wrap: wrap);
         padding: $general-spacing * 2;
     }
 

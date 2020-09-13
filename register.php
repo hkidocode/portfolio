@@ -21,26 +21,29 @@
 
     <!-- Start Sign Up -->
     <div class="form-container sign-up-container">
-      <form role="form" method="post" action="#" class="signup">
+      <form role="form" method="post" action="process.php" class="signup">
         <h1>Create Account</h1>
         <span>Or use your email for registration</span>
-        <input type="text" placeholder="Name" />
-        <input type="email" placeholder="Email" />
-        <input type="password" placeholder="Password" />
-        <button>Sign Up</button>
+        <input type="text" name="name" placeholder="Name" class="name">
+        <small></small>
+        <input type="email" name="email" placeholder="Email" class="email">
+        <small></small>
+        <input type="password" name="password" placeholder="Password" class="password">
+        <small></small>
+        <button type="submit">Sign Up</button>
       </form>
     </div>
     <!-- End Sign Up -->
 
     <!-- Start Sign In -->
     <div class="form-container sign-in-container">
-      <form role="form" method="post" action="#" class="signin">
+      <form role="form" method="post" action="process.php" class="signin">
         <h1>Sign in</h1>
         <span>Or use your account</span>
-        <input type="text" placeholder="Email" />
-        <input type="password" placeholder="Password" />
+        <input type="text" name="email" placeholder="Email">
+        <input type="password" name="password" placeholder="Password">
         <a href="#">Forgot your password?</a>
-        <button>Sign In</button>
+        <button type="submit">Sign In</button>
       </form>
     </div>
 
@@ -71,8 +74,32 @@
   </div>
 
   <!-- REGISTER JS -->
-  <script src="assets/js/register.js"></script>
+  <script type="module" src="assets/js/register.js"></script>
+  <?php
 
+    include_once("config.php");
+
+     // name
+     $name = !empty($_POST['name']) ? $_POST['full-name'] : NULL;
+     // email
+     $email = !empty($_POST['email']) ? $_POST['email'] : NULL;
+     // message
+     $password = !empty($_POST['password']) ? $_POST['password'] : NULL;
+    
+    try {
+        $con = new PDO("mysql:host={$db_host};dbname={$db_name};port={$db_port}", $db_user, $db_password);
+        $con->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+        // insert data to users table
+        $stmt = $con->prepare("INSERT INTO $db_name VALUES (:name, :email, :password)");
+        $stmt->execute(array(':name' => $name, ':email' => $email, ':password' => $password));
+
+
+    }
+    catch (PDOException $e) {
+        echo "Connection field" . $e->getMessage();
+    }
+
+?>
 </body>
 
 </html>

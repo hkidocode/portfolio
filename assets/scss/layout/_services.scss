@@ -11,7 +11,7 @@
 
     &__description {
         @include center(65%);
-        @include desc-style($fs-p, ($general-spacing * 4));
+        @include desc-style(($base-fs * 1.7), ($general-spacing * 4));
     }
 
     &__content {
@@ -65,5 +65,41 @@
 
     .skill:nth-child(3) {
         border-radius: 8px 8px 8px 20px;
+    }
+}
+
+@include mq(987px) {
+    .services {
+        &__description {
+            width: 90%;
+            @include desc-style(($base-fs * 1.6), ($general-spacing * 3.5));
+        }
+
+        &__content {
+            @include flexy(space-between, $dir: column);
+            width: 45%;
+            height: 820px; 
+        }
+
+        .skill:nth-child(1) {
+            border-radius: 8px 8px 18px 18px;
+        }
+    
+        .skill:nth-child(2) {
+            border-radius: 8px 8px 18px 18px;
+        }
+    
+        .skill:nth-child(3) {
+            border-radius: 8px 8px 18px 18px;
+        }
+
+    }
+}
+
+@include mq(703px) {
+    .services {
+        &__content {
+            width: 70%;
+        }
     }
 }

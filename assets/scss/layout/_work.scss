@@ -11,7 +11,7 @@
 
     &__description {
         @include center(65%);
-        @include desc-style($fs-p, ($general-spacing * 4));
+        @include desc-style(($base-fs * 1.7), ($general-spacing * 4));
     }
 
     .work-type {
@@ -129,5 +129,64 @@
         }
     }
 
+}
+
+@include mq(987px) {
+    .work {
+
+        &__description {
+            width: 90%;
+            @include desc-style(($base-fs * 1.6), ($general-spacing * 3.5));
+        }
+    }
+}
+
+@include mq(775px) {
+    .work {
+        .work-projects {
+            grid-template-columns: repeat(2, 1fr);
+            height: 700px;
+
+            .details {
+                &__desc {
+                    font-size: $base-fs;
+                }
+
+                &__link {
+                    display: inline-block;
+                    @include btn-style(120px, 26px, $bg-color: $clr-yellow, $fs: $base-fs * .9, $border: 2px solid $clr-yellow);
+                }
+            }
+        }
+
+        .work-type {
+            margin-bottom: $general-spacing * 2.3;
     
+            &__item {
+                @include btn-style(150px, 40px, $bg-color: #FFF,$color: $clr-p,$fs: $base-fs, $border: 2px solid $clr-yellow); 
+            }
+        }
+
+    }
+
+}
+
+@include mq(659px) {
+    .work {
+
+        .work-projects {
+            @include center(70%);
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: repeat(6, 1fr);
+            height: 1300px;
+        }
+
+        .work-type {
+            width: 90%;
+
+            &__item {
+                @include btn-style(170px, 40px, $bg-color: #FFF,$color: $clr-p,$fs: ($base-fs* .9), $border: 2px solid $clr-yellow); 
+            }
+        }
+    }
 }

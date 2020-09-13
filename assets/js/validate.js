@@ -27,8 +27,7 @@ function isValidPassword(password) {
         setSuccessFor(password);
     } else {
         setErrorFor(password,
-            "Enter 6 to 20 characters which contain at least one numeric digit, one uppercase and one lowercase letter",
-            2);
+            `Enter 6 to 30 characters:<br>1.at least one numeric digit<br>2.one uppercase and one lowercase`);
     }
 }
 
@@ -50,9 +49,8 @@ function setSuccessFor(input) {
 // Add styles to input if not exist and not match the existing regular expression 
 function setErrorFor(input, message) {
     const smallMessage = input.nextElementSibling;
-    smallMessage.textContent = message;
+    smallMessage.innerHTML = message;
     input.style.border = '1.5px solid #FF0033';
     smallMessage.style.color = '#FF0033';
-    smallMessage.style.padding = '10px 8px 0px';
-    smallMessage.style.fontSize = '16px';
+    smallMessage.style.fontSize = '12px';
 }

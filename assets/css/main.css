@@ -29,6 +29,7 @@ body {
 
 img {
   max-width: 100%;
+  vertical-align: middle;
 }
 
 ul {
@@ -114,11 +115,12 @@ i {
 }
 
 .nav .action:hover {
+  color: #77E6C0;
   background-color: #FFFFFF;
   border: 2px solid #F9EA8F;
 }
 
-.nav__item a:hover {
+.nav__item a:hover:not(.action) {
   color: #77E6C0;
   border-bottom: 3px solid #F9EA8F;
 }
@@ -300,8 +302,10 @@ i {
 }
 
 .about__avatar img {
-  min-width: 357.5px;
+  min-width: 357px;
   min-height: 533px;
+  -webkit-filter: saturate(1.2);
+          filter: saturate(1.2);
 }
 
 .about .border {
@@ -409,6 +413,71 @@ i {
 
 .about .btn-wrap__view:hover::before {
   transform: translateX(100%) rotate(45deg);
+}
+
+@media (max-width: 1208px) {
+  .about__avatar img {
+    min-width: 317px;
+    min-height: 493px;
+  }
+  .about .border {
+    min-width: 282px;
+    min-height: 390px;
+  }
+  .about__description p {
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 1085px) {
+  .about__avatar img {
+    min-width: 282px;
+    min-height: 458px;
+  }
+  .about .border {
+    min-width: 247px;
+    min-height: 355px;
+  }
+  .about__description {
+    margin-left: 40px;
+    margin-top: 60px;
+  }
+  .about__description p {
+    margin-bottom: 30px;
+    font-size: 25.6px;
+  }
+}
+
+@media (max-width: 963px) {
+  .about__description p {
+    margin-bottom: 30px;
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 833px) {
+  .about__title {
+    padding-bottom: 50px;
+  }
+  .about .columns {
+    display: flex;
+    flex-direction: column;
+  }
+  .about__avatar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .about__avatar img {
+    width: 317px;
+    height: 493px;
+  }
+  .about .border {
+    display: none;
+  }
+  .about__description p {
+    margin-bottom: 50px;
+  }
 }
 
 .modal {
@@ -833,6 +902,37 @@ i {
   border-radius: 8px 8px 8px 20px;
 }
 
+@media (max-width: 987px) {
+  .services__description {
+    width: 90%;
+    font-size: 25.6px;
+    text-align: center;
+    padding-bottom: 70px;
+  }
+  .services__content {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 45%;
+    height: 820px;
+  }
+  .services .skill:nth-child(1) {
+    border-radius: 8px 8px 18px 18px;
+  }
+  .services .skill:nth-child(2) {
+    border-radius: 8px 8px 18px 18px;
+  }
+  .services .skill:nth-child(3) {
+    border-radius: 8px 8px 18px 18px;
+  }
+}
+
+@media (max-width: 703px) {
+  .services__content {
+    width: 70%;
+  }
+}
+
 /***************** WORK SECTION *****************/
 .work {
   width: 90%;
@@ -1027,6 +1127,84 @@ i {
   }
 }
 
+@media (max-width: 987px) {
+  .work__description {
+    width: 90%;
+    font-size: 25.6px;
+    text-align: center;
+    padding-bottom: 70px;
+  }
+}
+
+@media (max-width: 775px) {
+  .work .work-projects {
+    grid-template-columns: repeat(2, 1fr);
+    height: 700px;
+  }
+  .work .work-projects .details__desc {
+    font-size: 16px;
+  }
+  .work .work-projects .details__link {
+    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 26px;
+    font-size: 14.4px;
+    background-color: #F9EA8F;
+    color: #77E6C0;
+    border-radius: 30px;
+    border: 2px solid #F9EA8F;
+    font-family: "Edo SZ";
+    text-align: center;
+  }
+  .work .work-type {
+    margin-bottom: 46px;
+  }
+  .work .work-type__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 40px;
+    font-size: 16px;
+    background-color: #FFF;
+    color: #635555;
+    border-radius: 30px;
+    border: 2px solid #F9EA8F;
+    font-family: "Edo SZ";
+    text-align: center;
+  }
+}
+
+@media (max-width: 659px) {
+  .work .work-projects {
+    width: 70%;
+    margin: 0 auto;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    height: 1300px;
+  }
+  .work .work-type {
+    width: 90%;
+  }
+  .work .work-type__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 40px;
+    font-size: 14.4px;
+    background-color: #FFF;
+    color: #635555;
+    border-radius: 30px;
+    border: 2px solid #F9EA8F;
+    font-family: "Edo SZ";
+    text-align: center;
+  }
+}
+
 .mentors {
   width: 90%;
   margin: 0 auto;
@@ -1083,6 +1261,15 @@ i {
   transition: all .3s ease-in;
 }
 
+@media (max-width: 1100px) {
+  .mentors__description {
+    width: 90%;
+    font-size: 25.6px;
+    text-align: center;
+    padding-bottom: 70px;
+  }
+}
+
 .carasoul {
   width: 80%;
   margin: 0 auto;
@@ -1110,7 +1297,6 @@ i {
 }
 
 .carasoul__track .mentor {
-  min-width: 100%;
   background-color: #AFF1DA;
   padding: 0px 30px;
   position: absolute;
@@ -1191,6 +1377,7 @@ i {
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   padding: 40px;
 }
 

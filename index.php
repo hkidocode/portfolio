@@ -35,7 +35,6 @@
                     <li class="nav__item"><a href="register.php" class="action">Sign Up</a></li>
                 </ul>
                 <div class="options">
-                    <i class="fas fa-moon options__dark"></i>
                     <select name="" id="" class="options__language">
                         <option value="">En</option>
                         <option value="">Fr</option>
@@ -310,7 +309,7 @@
 
         <!--Start mentors section-->
         <section class="mentors">
-            <h1 class="mentors__title"><span></span>What my mentors say<span></span></h1>
+            <h1 class="mentors__title"><span></span>My mentors says<span></span></h1>
             <p class="mentors__description">People I've learn with have said some nice things...
             </p>
             <div class="carasoul" data-aos="fade-right" data-aos-delay="400">
@@ -383,28 +382,28 @@
                     <img src="assets/img/ionic-ios-checkmark-circle-outline.png" alt="checkmark-picture"
                         class="project__icon">
                     <div class="project__details">
-                        <p class="project__details__num" data-target="10">0</p>
+                        <p class="project__details__num" data-target="100">0</p>
                         <p class="project__details__title">Projects Done</p>
                     </div>
                 </div>
                 <div class="project" data-aos="fade-down" data-aos-delay="400">
                     <img src="assets/img/ionic-md-happy.png" alt="happy-picture" class="project__icon">
                     <div class="project__details">
-                        <p class="project__details__num" data-target="6">0</p>
+                        <p class="project__details__num" data-target="600">0</p>
                         <p class="project__details__title">Satisfied Clients</p>
                     </div>
                 </div>
                 <div class="project" data-aos="fade-down" data-aos-delay="600">
                     <img src="assets/img/awesome-bolt.png" alt="bolt-picture" class="project__icon">
                     <div class="project__details">
-                        <p class="project__details__num" data-target="4">0</p>
+                        <p class="project__details__num" data-target="450">0</p>
                         <p class="project__details__title">Active Projects</p>
                     </div>
                 </div>
                 <div class="project" data-aos="fade-down" data-aos-delay="800">
                     <img src="assets/img/awesome-mountain.png" alt="mountain-picture" class="project__icon">
                     <div class="project__details">
-                        <p class="project__details__num" data-target="10">0</p>
+                        <p class="project__details__num" data-target="960">0</p>
                         <p class="project__details__title">Months Experience</p>
                     </div>
                 </div>
@@ -481,15 +480,13 @@
     </section>
     <!--End footer section-->
 
-    <!-- Base JS -->
-    <script src="assets/js/main.js"></script>
-
-    <!--Animation vanilla js-->
-    <script src="assets/js/modal.js"></script>
-    <script src="assets/js/filter.js"></script>
-    <script src="assets/js/carasoul.js"></script>
-    <script src="assets/js/counter.js"></script>
-
+    <!--Animations JS-->
+    <script src="assets/js/animations/navbar.js"></script>
+    <script src="assets/js/animations/modal.js"></script>
+    <script src="assets/js/animations/filter.js"></script>
+    <script src="assets/js/animations/carasoul.js"></script>
+    <script src="assets/js/animations/counter.js"></script>
+    <!--Contact Form-->
     <script type="module" src="assets/js/form.js"></script>
     <!-- AOS JS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
